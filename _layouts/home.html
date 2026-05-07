@@ -125,12 +125,7 @@ layout: default
             {% if section.name == "Publications" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
                 <p class="tab-intro">Research publications and preprints.</p>
-                <h2 class="bibliography">2026</h2>
-                {% bibliography -f papers --query @*[year=2026] %}
-                <h2 class="bibliography">2025</h2>
-                {% bibliography -f papers --query @*[year=2025] %}
-                <h2 class="bibliography">2022</h2>
-                {% bibliography -f papers --query @*[year=2022] %}
+                {% bibliography -f papers %}
               </div>
             {% elsif section.name == "Presentations" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
@@ -210,14 +205,14 @@ layout: default
                             <a href="{{ talk.code }}" title="Code" class="btn btn-light" role="button" target="_blank"><ion-icon name="code-slash-outline" class="button-icon"></ion-icon> <span class="button-text">Code</span></a>
                           {% endif %}
                           {% if talk.poster %}
-                            {% if talk.poster contains '://' %}
+                            {% if talk.poster contains '://' or talk.poster contains '/' %}
                               <a href="{{ talk.poster }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
                             {% else %}
                               <a href="{{ talk.poster | prepend: '/assets/pdf/' | relative_url }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
                             {% endif %}
                           {% endif %}
                           {% if talk.slides %}
-                            {% if talk.slides contains '://' %}
+                            {% if talk.slides contains '://' or talk.slides contains '/' %}
                               <a href="{{ talk.slides }}" title="Slides" class="btn btn-light" role="button" target="_blank"><ion-icon name="albums-outline" class="button-icon"></ion-icon> <span class="button-text">Slides</span></a>
                             {% else %}
                               <a href="{{ talk.slides | prepend: '/assets/pdf/' | relative_url }}" title="Slides" class="btn btn-light" role="button" target="_blank"><ion-icon name="albums-outline" class="button-icon"></ion-icon> <span class="button-text">Slides</span></a>

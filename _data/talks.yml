@@ -19,6 +19,7 @@
   venue: Language Resources and Evaluation Conference (LREC)
   location: Marseille, France
   publication: https://aclanthology.org/2022.lrec-1.617/
+  slides: LRECTalk.pdf
 
 - title: "Interpretable ML Model Providing Neuron Annotations Using No Data"
   type: Video Presentation and Poster Session
@@ -26,13 +27,16 @@
   year: 2022
   venue: MIT Summer Research Program
   location: Cambridge, MA, USA
-  video: https://www.youtube.com/watch?v=NRAkEtAYd7I&list=PLZdlHbxyftd8e8fYLiUwvLYztMGoIjBIr&index=6 
+  video: https://www.youtube.com/watch?v=NRAkEtAYd7I&list=PLZdlHbxyftd8e8fYLiUwvLYztMGoIjBIr&index=6
+  poster: MSRPPoster.pdf
 
 - title: "Symbol and Communicative Grounding through Object Permanence with a Mobile Robot"
-  type: Conference Presentation
+  type: Conference Presentation and Poster Session
   date: September 2022
   year: 2022
   venue: Special Interest Group on Discourse and Dialogue (SIGdial)
   location: Edinburgh, Scotland
   publication: https://aclanthology.org/2022.sigdial-1.14/
   video: https://youtu.be/xxulenUa754
+  slides: Sigdial2022Presentation.pdf
+  poster: YRRSDS2022Poster.pdf

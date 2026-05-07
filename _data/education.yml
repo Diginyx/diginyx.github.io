@@ -11,7 +11,8 @@
   year: May 2025
   school: University of Michigan
   icon: /assets/img/icons/umich_seal.png
-  details: []
+  details:
+    - "Advisor: Dr. Joyce Chai"
 
 - degree: Bachelor of Science
   field: Computer Science, Minor in Applied Mathematics

@@ -117,6 +117,8 @@ exclude:
 #========================================#
 scholar:
   last_name: Torres-Fonseca
+  group_by: year
+  group_order: descending
   style: apa
   locale: en
   source: /_bibliography/
