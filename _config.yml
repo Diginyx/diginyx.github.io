@@ -12,7 +12,7 @@ title: Josue Torres-Fonseca
 email: josuetf@umich.edu
 description: Josue Torres-Fonseca's Academic Portfolio
 baseurl:                                       # the subpath of your site, e.g. /blog
-url: "https://www.josuetorresfonseca.com/"          # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://josuetorresfonseca.com"               # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/dumbarton.png               # used to generate site link preview
 image_alt: A minimalistic jekyll theme for academic    # image description
 
