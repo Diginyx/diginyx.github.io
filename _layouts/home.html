@@ -228,6 +228,44 @@ layout: default
                   {% if forloop.last %}</ul>{% endif %}
                 {% endfor %}
               </div>
+            {% elsif section.name == "Academic Jobs" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p><i>History of academic appointments.</i></p>
+                {% for job in site.data.academic_jobs %}
+                  <div class="list-group">
+                    <div class="list-group-item list-group-item-action">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="mb-1">{{ job.title }}</h5>
+                          <small>{{ job.start }} - {{ job.end }}</small>
+                        </div>
+                      </div>
+                      <p><i>{{ job.role }}</i></p>
+                      <p class="mb-1">{{ job.description }}</p>
+                      <small>{{ job.location }}</small>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% elsif section.name == "Industry Jobs" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p><i>Other appointments I've held in industry.</i></p>
+                {% for job in site.data.industry_jobs %}
+                  <div class="list-group">
+                    <div class="list-group-item list-group-item-action">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="mb-1">{{ job.title }}</h5>
+                          <small>{{ job.start }} - {{ job.end }}</small>
+                        </div>
+                      </div>
+                      <p><i>{{ job.role }}</i></p>
+                      <p class="mb-1">{{ job.description }}</p>
+                      <small>{{ job.location }}</small>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
             {% elsif section.name == "Awards" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
                 <span><i>Selected awards and honors I've received.</i></span>

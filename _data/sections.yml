@@ -19,6 +19,16 @@
   description:
   first: false
 
+- name: Academic Jobs
+  id: academic
+  description:
+  first: false
+
+- name: Industry Jobs
+  id: industry
+  description:
+  first: false
+
 - name: Awards
   id: awards
   description:

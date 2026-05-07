@@ -1,0 +1,44 @@
+- title: "Computer Science and Engineering Division, University of Michigan"
+  role: "PhD Candidate, Situated Language and Embodied Dialogue Group"
+  start: August 2023
+  end: Present
+  description: >
+    Supervised by Dr. Joyce Chai. Created a safety-centric dataset using PDDL to generate trajectories
+    demonstrating how to complete household tasks while mitigating hazards rendered in the AI2-Thor simulator.
+    Evaluated 11 state-of-the-art VLMs on hazard recognition via Visual Question Answering (VQA) and safe
+    plan generation as an embodied agent performing household tasks while proactively mitigating hazards.
+    Developed a decoupled multi-agent framework that separated hazard recognition from task execution,
+    resulting in increased safety-planning success rates.
+  location: Ann Arbor, MI, USA
+
+- title: "Department of Electrical Engineering and Computer Science, MIT"
+  role: "Undergraduate Researcher, Language & Intelligence Group"
+  start: May 2022
+  end: November 2022
+  description: >
+    Supervised by Dr. Jacob Andreas. Designed and built an interpretable ML model providing neuron
+    annotations using no data. Presented poster at the MIT Summer Research Program poster session and
+    delivered a lightning talk on the MIT Grad Diversity YouTube channel.
+  location: Cambridge, MA, USA
+
+- title: "Department of Computer Science, Boise State University"
+  role: "Undergraduate Researcher, Speech Language and Interactive Machines Group"
+  start: August 2021
+  end: August 2023
+  description: >
+    Supervised by Dr. Casey Kennington. Designed and built an incremental spoken dialogue system capable
+    of transcribing and understanding speech, detecting and gaining a concrete understanding of objects,
+    and mapping objects in its environment using SLAM and the Anki Cozmo robot. Gathered human appraisals
+    and descriptions of robot emotional behaviors from participants and analyzed the data. Presented at
+    SIGdial 2022 and LREC 2022.
+  location: Boise, ID, USA
+
+- title: "Department of Computer Science, Texas State University"
+  role: "Undergraduate Researcher, Intelligent Security Group"
+  start: June 2020
+  end: August 2020
+  description: >
+    Supervised by Dr. Mina Guirguis; funded by NSF as a Smart & Connected Communities REU site. Designed
+    and built a game and reward system to secure a simulated water tank using game theory. Simulated and
+    secured a water tank with check blocks acting as both an intrusion detection and prevention system.
+  location: San Marcos, TX, USA
