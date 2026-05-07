@@ -84,25 +84,31 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
 <link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
 
+{% assign og_title = page.title | default: site.title %}
+{% assign og_description = page.description | default: site.description %}
+{% assign og_image = page.image | default: site.image %}
+{% assign og_image_alt = page.image_alt | default: site.image_alt %}
+{% assign og_author = page.author | default: site.author %}
+{% assign og_twitter = page.twitter | default: site.twitter %}
 <meta property="fb:app_id" content="{{ site.fbappid }}">
-<meta property="og:url" content="{{ page.url }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ page.description }}">
-<meta property="og:image" content="{{ page.image }}">
-<meta property="og:image:alt" content="{{ page.image_alt }}">
-<meta property="og:description" content="{{ page.description }}">
-<meta property="og:site_name" content="{{ page.title }}">
+<meta property="og:title" content="{{ og_title }}">
+<meta property="og:image" content="{{ og_image | absolute_url }}">
+<meta property="og:image:alt" content="{{ og_image_alt }}">
+<meta property="og:description" content="{{ og_description }}">
+<meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="{{ page.author }}">
+<meta property="article:author" content="{{ og_author }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{ page.twitter }}">
-<meta name="twitter:creator" content="@{{ page.twitter }}">
-<meta name="twitter:url" content="{{ page.url }}">
-<meta name="twitter:title" content="{{ page.description }}">
-<meta name="twitter:description" content="{{ page.description }}">
-<meta name="twitter:image" content="{{ page.image }}">
-<meta name="twitter:image:alt" content="{{ page.image_alt }}">
+<meta name="twitter:site" content="@{{ og_twitter }}">
+<meta name="twitter:creator" content="@{{ og_twitter }}">
+<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:title" content="{{ og_title }}">
+<meta name="twitter:description" content="{{ og_description }}">
+<meta name="twitter:image" content="{{ og_image | absolute_url }}">
+<meta name="twitter:image:alt" content="{{ og_image_alt }}">
 
 <!-- Used for adding in-document CSS -->
 
