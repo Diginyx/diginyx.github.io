@@ -1,0 +1,38 @@
+# Each talk supports these fields (only `title`, `venue`, `date`, `year` are required):
+#   title:        the title of the talk
+#   type:         e.g. "Conference Paper", "Poster Session", "Guest Lecture", "Lightning Talk"
+#   date:         e.g. "August 2025"
+#   year:         numeric year (used for grouping)
+#   venue:        full venue name (rendered in italics)
+#   location:     city / country
+#   publication:  link to paper (Publication button)
+#   preprint:     link to arXiv / preprint (Preprint button)
+#   code:         link to code repo (Code button)
+#   poster:       URL OR filename in /assets/pdf/  (Poster button)
+#   slides:       URL OR filename in /assets/pdf/  (Slides button)
+#   video:        link to video (Video button)
+
+- title: "HADREB: Human Appraisals and (English) Descriptions of Robot Emotional Behaviors"
+  type: Video Presentation
+  date: June 2022
+  year: 2022
+  venue: Language Resources and Evaluation Conference (LREC)
+  location: Marseille, France
+  publication: https://aclanthology.org/2022.lrec-1.617/
+
+- title: "Interpretable ML Model Providing Neuron Annotations Using No Data"
+  type: Video Presentation and Poster Session
+  date: August 2022
+  year: 2022
+  venue: MIT Summer Research Program
+  location: Cambridge, MA, USA
+  video: https://www.youtube.com/watch?v=NRAkEtAYd7I&list=PLZdlHbxyftd8e8fYLiUwvLYztMGoIjBIr&index=6 
+
+- title: "Symbol and Communicative Grounding through Object Permanence with a Mobile Robot"
+  type: Conference Presentation
+  date: September 2022
+  year: 2022
+  venue: Special Interest Group on Discourse and Dialogue (SIGdial)
+  location: Edinburgh, Scotland
+  publication: https://aclanthology.org/2022.sigdial-1.14/
+  video: https://youtu.be/xxulenUa754

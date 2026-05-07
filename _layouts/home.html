@@ -3,6 +3,29 @@ layout: default
 ---
 {% assign theme = site.data.themes[site.ui_theme] %}
 
+<style>
+  /* Shane-style content styling for tab panels */
+  .tab-content .list-group { margin-bottom: 1rem; }
+  .tab-content .list-group-item-action h5 { font-size: 1.05rem; }
+  .tab-content .list-group-item-action small { color: #666; }
+  .tab-content .row.bib-entry { margin-bottom: 1.5rem; align-items: center; }
+  .tab-content .bib-entry .title { font-size: 1.05rem; }
+  .tab-content .bib-entry .periodical em { color: #555; }
+  .tab-content .btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+  }
+  .tab-content .btn-light:hover { background-color: #e9ecef; color: #5C1A1B; }
+  .tab-content .awards-list { margin-top: 0.5rem; padding-left: 1.2rem; }
+  .tab-content .awards-list li { margin-bottom: 0.4rem; }
+  .tab-content .tab-intro { font-style: italic; color: #555; margin-bottom: 1rem; }
+</style>
+
 <!--  HELP TIPS SECTION  -->
 <!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
 {% if site.help_tips %}
@@ -74,21 +97,45 @@ layout: default
       <div class="tab-content mt-3">
         {% for section in site.data.sections %}
           {% if section.first %}
-            {% if section.name == "Publications" %}
+            {% if section.name == "Education" %}
               <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-                <p><i>{{section.description}}</i></p>
-                <p class="card-text">{% bibliography -f papers %}</p>
+                <ul class="list-unstyled">
+                  {% for entry in site.data.education %}
+                    <li class="media mb-3">
+                      <img src="{{ entry.icon }}" class="mr-3 education-img" alt="{{ entry.school }} seal" style="width: 60px; height: 60px; object-fit: contain;">
+                      <div class="media-body">
+                        <h5 style="font-size: 17px;"><strong>{{ entry.degree }}</strong> in {{ entry.field }}</h5>
+                        <p style="font-size: 14px; margin-bottom: 0;">
+                          {{ entry.year }}, {{ entry.school }}
+                          {% for detail in entry.details %}
+                            <br>{{ detail }}
+                          {% endfor %}
+                        </p>
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p class="card-text">{{section.description}}</p>
               </div>
             {% endif %}
-          {% else %}  
-            {% if section.name == "Presentations" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+          {% else %}
+            {% if section.name == "Publications" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p class="tab-intro">Research publications and preprints.</p>
+                <h2 class="bibliography">2026</h2>
+                {% bibliography -f papers --query @*[year=2026] %}
+                <h2 class="bibliography">2025</h2>
+                {% bibliography -f papers --query @*[year=2025] %}
+                <h2 class="bibliography">2022</h2>
+                {% bibliography -f papers --query @*[year=2022] %}
+              </div>
+            {% elsif section.name == "Presentations" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
                 <p><i>{{section.description}}</i></p>
-                <p class="card-text">{% bibliography -f presentations %}</p>              
+                <p class="card-text">{% bibliography -f presentations %}</p>
               </div>
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
@@ -111,21 +158,91 @@ layout: default
                 </div>        
               </div>
             {% elsif section.name == "Teaching" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                    {% for courses in site.data.teaching %}
-                    <div class="list-group">
-                      <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">{{ courses.Schoool }}</h5>
-                          <p>{{ courses.Program }}</p>
-                          <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p class="tab-intro">Courses I've assisted in teaching.</p>
+                {% for entry in site.data.teaching %}
+                  <div class="list-group">
+                    <div class="list-group-item list-group-item-action">
+                      <div>
+                        {% if entry.icon %}
+                        <div class="entry-img-pane">
+                          <img src="{{ entry.icon }}" class="entry-img" alt="{{ entry.School }} logo">
                         </div>
-                        <p class="mb-1">{{ courses.description }}</p>
-                        <small>{{ courses.Department }}</small>
+                        {% endif %}
+                        <div class="d-flex justify-content-between">
+                          <h5 class="mb-1">{{ entry.Program }}</h5>
+                          <small>{{ entry.StartDate }} – {{ entry.EndDate }}</small>
+                        </div>
+                        <p><i>{{ entry.School }}</i></p>
+                      </div>
+                      <p class="mb-1">{{ entry.description }}</p>
+                      <small>{{ entry.Department }}</small>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% elsif section.name == "Talks" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p class="tab-intro">Conference presentations and other talks.</p>
+                {% assign sorted_talks = site.data.talks | sort: "year" | reverse %}
+                {% assign current_year = "" %}
+                {% for talk in sorted_talks %}
+                  {% if talk.year != current_year %}
+                    {% if forloop.first == false %}</ul>{% endif %}
+                    <h2 class="bibliography">{{ talk.year }}</h2>
+                    <ul class="bibliography">
+                    {% assign current_year = talk.year %}
+                  {% endif %}
+                  <li>
+                    <div class="row bib-entry">
+                      <div class="col-sm-12">
+                        <div class="title" style="font-weight:700;"><strong>{{ talk.title }}</strong></div>
+                        {% if talk.type %}<div class="author">{{ talk.type }}{% if talk.date %}, {{ talk.date }}{% endif %}</div>{% endif %}
+                        <div class="periodical"><em>{{ talk.venue }}</em>{% if talk.location %} -- {{ talk.location }}{% endif %}</div>
+                        <div class="links">
+                          {% if talk.publication %}
+                            <a href="{{ talk.publication }}" title="Publication" class="btn btn-light" role="button" target="_blank"><ion-icon name="book-outline" class="button-icon"></ion-icon> <span class="button-text">Publication</span></a>
+                          {% endif %}
+                          {% if talk.preprint %}
+                            <a href="{{ talk.preprint }}" title="Preprint" class="btn btn-light" role="button" target="_blank"><ion-icon name="document-outline" class="button-icon"></ion-icon> <span class="button-text">Preprint</span></a>
+                          {% endif %}
+                          {% if talk.code %}
+                            <a href="{{ talk.code }}" title="Code" class="btn btn-light" role="button" target="_blank"><ion-icon name="code-slash-outline" class="button-icon"></ion-icon> <span class="button-text">Code</span></a>
+                          {% endif %}
+                          {% if talk.poster %}
+                            {% if talk.poster contains '://' %}
+                              <a href="{{ talk.poster }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
+                            {% else %}
+                              <a href="{{ talk.poster | prepend: '/assets/pdf/' | relative_url }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
+                            {% endif %}
+                          {% endif %}
+                          {% if talk.slides %}
+                            {% if talk.slides contains '://' %}
+                              <a href="{{ talk.slides }}" title="Slides" class="btn btn-light" role="button" target="_blank"><ion-icon name="albums-outline" class="button-icon"></ion-icon> <span class="button-text">Slides</span></a>
+                            {% else %}
+                              <a href="{{ talk.slides | prepend: '/assets/pdf/' | relative_url }}" title="Slides" class="btn btn-light" role="button" target="_blank"><ion-icon name="albums-outline" class="button-icon"></ion-icon> <span class="button-text">Slides</span></a>
+                            {% endif %}
+                          {% endif %}
+                          {% if talk.video %}
+                            <a href="{{ talk.video }}" title="Video" class="btn btn-light" role="button" target="_blank"><ion-icon name="videocam-outline" class="button-icon"></ion-icon> <span class="button-text">Video</span></a>
+                          {% endif %}
+                        </div>
                       </div>
                     </div>
-                    {% endfor %}
+                  </li>
+                  {% if forloop.last %}</ul>{% endif %}
+                {% endfor %}
+              </div>
+            {% elsif section.name == "Awards" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <span><i>Selected awards and honors I've received.</i></span>
+                <ul class="awards-list">
+                  {% for award in site.data.awards %}
+                    <li>
+                      <strong>{{ award.name }}</strong>{% if award.amount %} ({{ award.amount }}){% endif %} <em>— {{ award.date }}</em>
+                    </li>
+                  {% endfor %}
+                </ul>
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
@@ -161,7 +278,36 @@ layout: default
     e.preventDefault()
     $(this).tab('show')
     })
-</script> 
+</script>
+
+<!-- Convert jekyll-scholar's numbered <ol class="bibliography"> into a non-numbered <ul> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('ol.bibliography').forEach(function (ol) {
+      var ul = document.createElement('ul');
+      ul.className = 'bibliography';
+      while (ol.firstChild) { ul.appendChild(ol.firstChild); }
+      ol.parentNode.replaceChild(ul, ol);
+    });
+  });
+</script>
+
+<!-- Style for ion-icon buttons + indented bib lists under year headers -->
+<style>
+  .tab-content .btn-light ion-icon { vertical-align: middle; font-size: 1rem; margin-right: 0.25rem; }
+  .tab-content .btn-light .button-text { vertical-align: middle; }
+  .tab-content ul.bibliography,
+  .tab-content ol.bibliography {
+    list-style: none !important;
+    padding-left: 2rem;
+    margin-left: 0;
+  }
+  .tab-content ul.bibliography > li,
+  .tab-content ol.bibliography > li { list-style: none !important; margin-bottom: 1.25rem; }
+  .tab-content h2.bibliography { font-size: 2rem; font-weight: 500; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+  .tab-content .entry-img-pane { width: 80px; float: left; }
+  .tab-content .entry-img { margin-top: 3px; height: 45px; }
+</style>
 
 <!-- OPTIONAL TOAST JS FUNCTION-->
 <script>

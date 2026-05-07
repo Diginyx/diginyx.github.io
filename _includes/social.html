@@ -1,48 +1,45 @@
 {% assign theme = site.data.themes[site.ui_theme] %}
 <!-- Displays Social Media Icons based on _config.yml settings -->
-<span style="color:{{ theme.social-color }};">
-    <i> &nbsp;&nbsp; </i>
-    {% if site.twitter %}
-        <a class="social-link" href="https://twitter.com/{{ site.twitter }}">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-twitter-square fa-lg"></i></a>
-        </span>
-    {% endif %}
-    {% if site.github %}
-        <a href="https://github.com/{{ site.github }}">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-github-square fa-lg"></i></a>
-        </span>
-    {% endif %}
-    {% if site.linkedin %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-linkedin fa-lg"></i></a>
-        </span>
-    {% endif %}
-    {% if site.codepen %}
-        <a href="https://codepen.io/{{ site.codepen }}">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-codepen fa-lg"></i></a>
-        </span>
-    {% endif %}
-    {% if site.stackoverflow %}
-        <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-stack-overflow fa-lg"></i></a>
-        </span>
-    {% endif %}
-    {% if site.medium %}
-        <a href="https://{{ site.medium }}.medium.com/">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-medium fa-lg"></i></a>
-        </span>
-    {% endif %}
-    {% if site.keybase %}
-        <a href="https://keybase.io/{{ site.keybase }}">
-        <span style="color: {{ theme.social-color }};">
-            <i class="fab fa-keybase"></i></a>
-        </span>
-    {% endif %} 
-    <i> &nbsp;&nbsp; </i>
+<style>
+  .nav-social-icons { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .nav-social-icons a { color: {{ theme.social-color }}; text-decoration: none; line-height: 1; }
+  .nav-social-icons a:hover { opacity: 0.8; }
+</style>
+<span class="nav-social-icons">
+  {% if site.email %}
+    <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fas fa-envelope-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.twitter %}
+    <a href="https://twitter.com/{{ site.twitter }}" aria-label="Twitter"><i class="fab fa-twitter-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.linkedin }}" aria-label="LinkedIn"><i class="fab fa-linkedin fa-xl"></i></a>
+  {% endif %}
+  {% if site.github %}
+    <a href="https://github.com/{{ site.github }}" aria-label="GitHub"><i class="fab fa-github-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.scholar_id %}
+    <a href="https://scholar.google.com/citations?user={{ site.scholar_id }}&hl=en" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.researchgate %}
+    <a href="https://www.researchgate.net/profile/{{ site.researchgate }}" target="_blank" aria-label="ResearchGate"><i class="ai ai-researchgate-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.orcid %}
+    <a href="https://orcid.org/{{ site.orcid }}" target="_blank" aria-label="ORCID"><i class="ai ai-orcid-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.arxiv %}
+    <a href="https://arxiv.org/a/{{ site.arxiv }}" target="_blank" aria-label="arXiv"><i class="ai ai-arxiv-square fa-xl"></i></a>
+  {% endif %}
+  {% if site.codepen %}
+    <a href="https://codepen.io/{{ site.codepen }}" aria-label="CodePen"><i class="fab fa-codepen fa-xl"></i></a>
+  {% endif %}
+  {% if site.stackoverflow %}
+    <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}" aria-label="Stack Overflow"><i class="fab fa-stack-overflow fa-xl"></i></a>
+  {% endif %}
+  {% if site.medium %}
+    <a href="https://{{ site.medium }}.medium.com/" aria-label="Medium"><i class="fab fa-medium fa-xl"></i></a>
+  {% endif %}
+  {% if site.keybase %}
+    <a href="https://keybase.io/{{ site.keybase }}" aria-label="Keybase"><i class="fab fa-keybase fa-xl"></i></a>
+  {% endif %}
 </span>

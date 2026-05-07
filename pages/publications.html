@@ -11,7 +11,66 @@ last-updated: 2020-10-30 5:55 PM
     <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
   </div>
 </div>
-{% bibliography -f papers %}
+<style>
+  .pub-list ol.bibliography,
+  .pub-list ul.bibliography,
+  .pub-list .bibliography {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .pub-list ol.bibliography > li,
+  .pub-list ul.bibliography > li {
+    list-style: none !important;
+    margin-bottom: 1.5rem;
+  }
+  .pub-list h2.bibliography {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #5C1A1B;
+    color: #5C1A1B;
+  }
+  .pub-list .bib-title { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+  .pub-list .bib-title a { color: #5C1A1B; text-decoration: none; }
+  .pub-list .bib-title a:hover { text-decoration: underline; }
+  .pub-list .bib-authors { font-size: 0.95rem; margin-top: 0.2rem; }
+  .pub-list .bib-venue { font-size: 0.9rem; color: #555; margin-top: 0.2rem; }
+  .pub-list .links { margin-top: 0.5rem; }
+  .pub-list .links a.btn {
+    background-color: #5C1A1B;
+    color: #F5EDE4;
+    border: none;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .pub-list .links a.btn:hover { background-color: #7B1E1E; color: #F5EDE4; }
+</style>
+
+<div class="pub-list">
+  <h2 class="bibliography">2026</h2>
+  {% bibliography -f papers --query @*[year=2026] %}
+
+  <h2 class="bibliography">2025</h2>
+  {% bibliography -f papers --query @*[year=2025] %}
+
+  <h2 class="bibliography">2022</h2>
+  {% bibliography -f papers --query @*[year=2022] %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.pub-list ol.bibliography').forEach(function (ol) {
+      var ul = document.createElement('ul');
+      ul.className = 'bibliography';
+      while (ol.firstChild) {
+        ul.appendChild(ol.firstChild);
+      }
+      ol.parentNode.replaceChild(ul, ol);
+    });
+  });
+</script>
 
 
 

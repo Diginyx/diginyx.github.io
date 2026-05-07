@@ -1,24 +1,42 @@
-- School: Harvard
-  Degree: 
-  Program: POL 240/SPI 312 International Relations
-  id: POL-240/SPI-312-International-Relations
-  data-id: data-harv1
-  heading-id: head-harv1
-  StartDate: 08/30/2019
-  EndDate: 08/30/2020
-  first: true   # one must be true to properly display
+- School: Boise State University
+  Department: Department of Computer Science
+  Program: Tutor, Operating Systems
+  StartDate: Jan 2023
+  EndDate: May 2023
+  icon: /assets/img/icons/bsu.png
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Taught students how concepts in class apply to their programming assignments;
+    educated students on how concepts taught in class may be used in industry settings;
+    assisted students in planning out and debugging their programming assignments.
 
-- School: Princeton
-  Degree: 
-  Program: POL 380 Human Rights
-  id: POL-380-Human-Rights
-  data-id: data-princ1   
-  heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
-  StartDate: 08/30/2019
-  EndDate: 08/30/2020
-  first: false
-  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
+- School: Boise State University
+  Department: Department of Computer Science
+  Program: Tutor, Introduction to Theory of Computation
+  StartDate: Jan 2021
+  EndDate: May 2021
+  icon: /assets/img/icons/bsu.png
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Assisted students by guiding them through their assignments;
+    facilitated individual and group tutoring sessions.
+
+- School: Boise State University
+  Department: Department of Computer Science
+  Program: Tutor, Data Structures
+  StartDate: Aug 2020
+  EndDate: Dec 2020
+  icon: /assets/img/icons/bsu.png
+  description: >
+    Worked with students to enhance their understanding of topics discussed in class;
+    guided students through debugging their code and understanding how their code worked;
+    communicated and effectively explained the purpose of data structures and how they worked.
+
+- School: Boise State University
+  Department: Department of Electrical and Computer Engineering
+  Program: Lab Assistant, Microprocessors
+  StartDate: Aug 2020
+  EndDate: Dec 2020
+  icon: /assets/img/icons/bsu.png
+  description: >
+    Guided students through lab work and debugging hardware and software issues;
+    helped students understand concepts related to the labs and how the labs demonstrated these concepts;
+    assisted professor in grading papers.

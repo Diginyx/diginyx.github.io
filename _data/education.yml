@@ -1,6 +1,23 @@
-- School: Princeton
-  Degree: 
-  Program: School of Public and International Affairs
-  Start Date: 
-  End Date: 
-  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
+- degree: Doctor of Philosophy
+  field: Computer Science and Engineering
+  year: Expected May 2028
+  school: University of Michigan
+  icon: /assets/img/icons/umich_seal.png
+  details:
+    - "Advisor: Dr. Joyce Chai"
+
+- degree: Master of Science
+  field: Computer Science and Engineering
+  year: May 2025
+  school: University of Michigan
+  icon: /assets/img/icons/umich_seal.png
+  details: []
+
+- degree: Bachelor of Science
+  field: Computer Science, Minor in Applied Mathematics
+  year: May 2023
+  school: Boise State University
+  icon: /assets/img/icons/boisestate_seal.png
+  details:
+    - "Magna Cum Laude"
+    - "Advisor: Dr. Casey Kennington"

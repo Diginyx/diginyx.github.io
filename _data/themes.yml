@@ -72,5 +72,38 @@ dark:
     default-button-color: ""
     social-color-footer : black
 
-
+crimson:
+    name: crimson
+    nav-color: "#5C1A1B"
+    nav-text: "#F5EDE4"
+    title-font: "Noto Sans JP"
+    link-font: "#272343"
+    link-color: "#5C1A1B"
+    link-font: "Poppins"
+    font: "Poppins"
+    font-color: "Black"
+    social-color: "#F5EDE4"
+    footer-social-color: "#F5EDE4"
+    button-color: "#5C1A1B"
+    home-highlight-background: "#F4D6D6"
+    home-highlight-header-text: "#5C1A1B"
+    education-title-font: "Noto Sans JP"
+    education-title-size: "18px"
+    education-entry-font: "Noto Sans JP"
+    education-entry-size: "18px"
+    education-section-size: "15px"
+    certification-title-font: "Noto Sans JP"
+    certification-title-size: "18px"
+    certification-entry-font: "Noto Sans JP"
+    certification-entry-size: "18px"
+    certification-section-size: "15px"
+    highlights-tab-color: "White"
+    projects-color: "Black"
+    border-style: ""
+    post-tag-size: "20px"
+    post-title-size: "36px"
+    post-author-size: "15px"
+    post-font-weight: "700"
+    default-button-color: ""
+    social-color-footer : black
 
