@@ -76,7 +76,7 @@ jobs:
               ).catch(() => {});
               // Final settle delay so any animations/CSS transitions finish
               await page.waitForTimeout(1500);
-              await page.screenshot({ path: '_site/assets/img/preview.png', fullPage: false });
+              await page.screenshot({ path: '_site/assets/img/preview.png', fullPage: true });
               await browser.close();
             })();
           "
