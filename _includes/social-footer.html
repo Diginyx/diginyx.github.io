@@ -28,7 +28,11 @@
     <a href="https://orcid.org/{{ site.orcid }}" target="_blank" aria-label="ORCID"><i class="ai ai-orcid-square fa-xl"></i></a>
   {% endif %}
   {% if site.arxiv %}
-    <a href="https://arxiv.org/a/{{ site.arxiv }}" target="_blank" aria-label="arXiv"><i class="ai ai-arxiv-square fa-xl"></i></a>
+    {% if site.arxiv contains '://' %}
+      <a href="{{ site.arxiv }}" target="_blank" aria-label="arXiv"><i class="ai ai-arxiv-square fa-xl"></i></a>
+    {% else %}
+      <a href="https://arxiv.org/a/{{ site.arxiv }}" target="_blank" aria-label="arXiv"><i class="ai ai-arxiv-square fa-xl"></i></a>
+    {% endif %}
   {% endif %}
   {% if site.codepen %}
     <a href="https://codepen.io/{{ site.codepen }}" aria-label="CodePen"><i class="fab fa-codepen fa-xl"></i></a>
