@@ -86,7 +86,9 @@
 
 {% assign og_title = page.title | default: site.description %}
 {% assign og_description = page.description | default: site.description %}
-{% assign og_image = page.image | default: site.image %}
+{% assign og_image_path = page.image | default: site.image %}
+{% assign build_time = site.time | date: '%s' %}
+{% assign og_image = og_image_path | append: '?v=' | append: build_time %}
 {% assign og_image_alt = page.image_alt | default: site.image_alt %}
 {% assign og_author = page.author | default: site.author %}
 {% assign og_twitter = page.twitter | default: site.twitter %}

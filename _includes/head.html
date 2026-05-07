@@ -87,7 +87,9 @@
 <meta property="og:url" content="{{ site.url }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ site.description }}">
-<meta property="og:image" content="{{ site.image | absolute_url }}">
+{% assign build_time = site.time | date: '%s' %}
+{% assign og_image = site.image | absolute_url | append: '?v=' | append: build_time %}
+<meta property="og:image" content="{{ og_image }}">
 <meta property="og:image:alt" content="{{ site.image_alt }}">
 <meta property="og:description" content="{{ site.description }}">
 <meta property="og:site_name" content="{{ site.title }}">
@@ -100,7 +102,7 @@
 <meta name="twitter:url" content="{{ site.url }}">
 <meta name="twitter:title" content="{{ site.description }}">
 <meta name="twitter:description" content="{{ site.description }}">
-<meta name="twitter:image" content="{{ site.image | absolute_url }}">
+<meta name="twitter:image" content="{{ og_image }}">
 <meta name="twitter:image:alt" content="{{ site.image_alt }}">
 
 <!-- Used for adding in-document CSS -->
