@@ -20,6 +20,7 @@
   location: Marseille, France
   publication: https://aclanthology.org/2022.lrec-1.617/
   slides: LRECTalk.pdf
+  code: https://github.com/bsu-slim/hadreb
 
 - title: "Interpretable ML Model Providing Neuron Annotations Using No Data"
   type: Video Presentation and Poster Session
