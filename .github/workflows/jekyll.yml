@@ -56,7 +56,26 @@ jobs:
             (async () => {
               const browser = await chromium.launch();
               const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-              await page.goto('http://localhost:8080/', { waitUntil: 'networkidle' });
+              await page.goto('http://localhost:8080/', { waitUntil: 'networkidle', timeout: 60000 });
+              // Wait for fonts
+              await page.evaluate(() => document.fonts.ready);
+              // Wait for ion-icons custom element to be registered
+              await page.waitForFunction(
+                () => window.customElements && window.customElements.get('ion-icon'),
+                { timeout: 15000 }
+              );
+              // Wait for the DOMContentLoaded JS to swap ol.bibliography → ul.bibliography
+              await page.waitForFunction(
+                () => document.querySelectorAll('ol.bibliography').length === 0,
+                { timeout: 10000 }
+              ).catch(() => {});
+              // Wait for all images on the page to load
+              await page.waitForFunction(() =>
+                Array.from(document.images).every(img => img.complete && img.naturalWidth > 0),
+                { timeout: 15000 }
+              ).catch(() => {});
+              // Final settle delay so any animations/CSS transitions finish
+              await page.waitForTimeout(1500);
               await page.screenshot({ path: '_site/assets/img/preview.png', fullPage: false });
               await browser.close();
             })();
