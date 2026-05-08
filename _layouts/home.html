@@ -7,19 +7,29 @@ layout: default
   .tab-content .list-group { margin-bottom: 1rem; }
   .tab-content .list-group-item-action h5 { font-size: 1.05rem; }
   .tab-content .list-group-item-action small { color: #666; }
-  .tab-content .row.bib-entry { margin-bottom: 1.5rem; align-items: center; }
+  .tab-content .row.bib-entry { margin-bottom: 1.5rem; align-items: flex-start; }
   .tab-content .bib-entry .title { font-size: 1.05rem; }
   .tab-content .bib-entry .periodical em { color: #555; }
+  .tab-content .publication-img {
+    display: block;
+    max-width: 200px;
+    align-self: start;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
   .tab-content .btn-light {
     background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    color: #333;
+    border: 1px solid #f8f9fa;
+    color: #5C1A1B;
     margin-right: 0.3rem;
     margin-bottom: 0.3rem;
-    font-size: 0.85rem;
-    padding: 0.25rem 0.6rem;
   }
+  .tab-content .btn-light ion-icon { color: #5C1A1B; }
   .tab-content .btn-light:hover { background-color: #e9ecef; color: #5C1A1B; }
+  .tab-content .btn-light:hover ion-icon { color: #5C1A1B; }
   .tab-content .awards-list { margin-top: 0.5rem; padding-left: 1.2rem; }
   .tab-content .awards-list li { margin-bottom: 0.4rem; }
   .tab-content .tab-intro { font-style: italic; color: #555; margin-bottom: 1rem; }
@@ -301,8 +311,8 @@ layout: default
 
 <!-- Style for ion-icon buttons + indented bib lists under year headers -->
 <style>
-  .tab-content .btn-light ion-icon { vertical-align: middle; font-size: 1rem; margin-right: 0.25rem; }
-  .tab-content .btn-light .button-text { vertical-align: middle; }
+  .tab-content .btn-light ion-icon { display: inline-block; vertical-align: middle; font-size: 20px; margin-left: -4px; margin-top: -1px; margin-right: 0.25rem; }
+  .tab-content .btn-light .button-text { display: inline-block; vertical-align: middle; }
   .tab-content ul.bibliography,
   .tab-content ol.bibliography {
     list-style: none !important;

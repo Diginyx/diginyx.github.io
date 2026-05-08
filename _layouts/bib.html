@@ -1,13 +1,11 @@
 ---
 ---
 
-<div class="row align-items-center" style="margin-bottom: 1.5rem;">
-    <div class="col-sm-3">
-      {% if entry.preview %}
-        <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="rounded" alt="{{entry.title}}" style="width: 100%; height: 130px; object-fit: contain;">
-      {% endif %}
-    </div>
-    <div id="{{entry.key}}" class="col-sm-9">
+<div class="row bib-entry" style="margin-bottom: 1.5rem;">
+    {% if entry.preview %}
+      <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="mr-3 publication-img" alt="{{entry.title}}">
+    {% endif %}
+    <div id="{{entry.key}}" class="col">
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
