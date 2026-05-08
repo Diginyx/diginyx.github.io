@@ -1,0 +1,82 @@
+<!-- Lightbox modal for clickable images. Reused by publications and any page that opts in
+     by including this file and adding `clickable-image` class to <img> elements. -->
+<style>
+  .clickable-image { cursor: zoom-in; transition: transform 0.15s ease; }
+  .clickable-image:hover { transform: scale(1.03); }
+  #imageModal .modal-content {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    align-items: center;
+  }
+  #imageModal .modal-close {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 2rem;
+    line-height: 1;
+    text-shadow: 0 0 6px rgba(0,0,0,0.8);
+    z-index: 10;
+    background: transparent;
+    border: 0;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+  }
+  #imageModal .modal-close:hover { opacity: 1; }
+  #imageModal img {
+    max-width: 100%;
+    max-height: 90vh;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    cursor: zoom-out;
+  }
+  #imageModal.show ~ .modal-backdrop.show { opacity: 0.85; }
+</style>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="imageModalImg">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">&times;</button>
+      <img id="imageModalImg" src="" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    function openModal(img) {
+      var modal = document.getElementById('imageModal');
+      var modalImg = document.getElementById('imageModalImg');
+      modalImg.src = img.currentSrc || img.src;
+      modalImg.alt = img.alt || '';
+      if (window.jQuery && window.jQuery.fn.modal) {
+        window.jQuery(modal).modal('show');
+      }
+    }
+    function wire() {
+      document.querySelectorAll('.clickable-image').forEach(function (img) {
+        if (img.dataset.zoomBound) return;
+        img.dataset.zoomBound = '1';
+        img.addEventListener('click', function () { openModal(img); });
+      });
+      var modalImg = document.getElementById('imageModalImg');
+      if (modalImg && !modalImg.dataset.zoomBound) {
+        modalImg.dataset.zoomBound = '1';
+        modalImg.addEventListener('click', function () {
+          if (window.jQuery && window.jQuery.fn.modal) {
+            window.jQuery('#imageModal').modal('hide');
+          }
+        });
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', wire);
+    } else {
+      wire();
+    }
+  })();
+</script>

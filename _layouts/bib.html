@@ -3,7 +3,7 @@
 
 <div class="row bib-entry" style="margin-bottom: 1.5rem;">
     {% if entry.preview %}
-      <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="mr-3 publication-img" alt="{{entry.title}}">
+      <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="mr-3 publication-img clickable-image" alt="{{entry.title}}">
     {% endif %}
     <div id="{{entry.key}}" class="col">
     {% if entry.type == "thesis" %}

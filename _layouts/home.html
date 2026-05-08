@@ -111,7 +111,7 @@ layout: default
                 <ul class="list-unstyled">
                   {% for entry in site.data.education %}
                     <li class="media mb-3">
-                      <img src="{{ entry.icon }}" class="mr-3 education-img" alt="{{ entry.school }} seal" style="width: 60px; height: 60px; object-fit: contain;">
+                      <img src="{{ entry.icon }}" class="mr-3 education-img clickable-image" alt="{{ entry.school }} seal" style="width: 90px; height: 90px; object-fit: contain;">
                       <div class="media-body">
                         <h5 style="font-size: 17px;"><strong>{{ entry.degree }}</strong> in {{ entry.field }}</h5>
                         <p style="font-size: 14px; margin-bottom: 0;">
@@ -283,6 +283,8 @@ layout: default
 </div>
 
 
+
+{% include image-modal.html %}
 
 <!-- ANIMATE.JS ANIMATE LIBRARY
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
