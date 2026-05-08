@@ -1,0 +1,38 @@
+# Single source of truth for the order and rendering of link buttons
+# on publications (_layouts/bib.html) and talks (_layouts/home.html).
+# Reorder by moving entries; render via {% include link-buttons.html entry=... %}.
+#
+#   field      - key looked up on the passed entry (paper bib field or talk yml field)
+#   title      - label shown in the button and used as the title attribute
+#   icon       - ionicon name
+#   pdf_local  - if true and the value has no slash, prepend /assets/pdf/
+
+- field: publication
+  title: Publication
+  icon: book-outline
+
+- field: preprint
+  title: Preprint
+  icon: document-outline
+
+- field: code
+  title: Code
+  icon: code-slash-outline
+
+- field: dataset
+  title: Dataset
+  icon: server-outline
+
+- field: video
+  title: Video
+  icon: videocam-outline
+
+- field: slides
+  title: Slides
+  icon: albums-outline
+  pdf_local: true
+
+- field: poster
+  title: Poster
+  icon: easel-outline
+  pdf_local: true

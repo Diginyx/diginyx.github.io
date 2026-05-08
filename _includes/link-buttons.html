@@ -1,0 +1,16 @@
+{%- assign _entry = include.entry -%}
+{%- for btn in site.data.link_buttons -%}
+  {%- assign val = _entry[btn.field] -%}
+  {%- if val and val != "" -%}
+    {%- if btn.pdf_local -%}
+      {%- if val contains '/' -%}
+        {%- assign href = val -%}
+      {%- else -%}
+        {%- capture href -%}{{ val | prepend: '/assets/pdf/' | relative_url }}{%- endcapture -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- assign href = val -%}
+    {%- endif -%}
+    <a href="{{ href }}" title="{{ btn.title }}" class="btn btn-light" role="button" target="_blank"><ion-icon name="{{ btn.icon }}" class="button-icon"></ion-icon> <span class="button-text">{{ btn.title }}</span></a>
+  {%- endif -%}
+{%- endfor -%}

@@ -194,32 +194,7 @@ layout: default
                         {% if talk.type %}<div class="author">{{ talk.type }}{% if talk.date %}, {{ talk.date }}{% endif %}</div>{% endif %}
                         <div class="periodical"><em>{{ talk.venue }}</em>{% if talk.location %} -- {{ talk.location }}{% endif %}</div>
                         <div class="links">
-                          {% if talk.publication %}
-                            <a href="{{ talk.publication }}" title="Publication" class="btn btn-light" role="button" target="_blank"><ion-icon name="book-outline" class="button-icon"></ion-icon> <span class="button-text">Publication</span></a>
-                          {% endif %}
-                          {% if talk.preprint %}
-                            <a href="{{ talk.preprint }}" title="Preprint" class="btn btn-light" role="button" target="_blank"><ion-icon name="document-outline" class="button-icon"></ion-icon> <span class="button-text">Preprint</span></a>
-                          {% endif %}
-                          {% if talk.code %}
-                            <a href="{{ talk.code }}" title="Code" class="btn btn-light" role="button" target="_blank"><ion-icon name="code-slash-outline" class="button-icon"></ion-icon> <span class="button-text">Code</span></a>
-                          {% endif %}
-                          {% if talk.poster %}
-                            {% if talk.poster contains '://' or talk.poster contains '/' %}
-                              <a href="{{ talk.poster }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
-                            {% else %}
-                              <a href="{{ talk.poster | prepend: '/assets/pdf/' | relative_url }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
-                            {% endif %}
-                          {% endif %}
-                          {% if talk.slides %}
-                            {% if talk.slides contains '://' or talk.slides contains '/' %}
-                              <a href="{{ talk.slides }}" title="Slides" class="btn btn-light" role="button" target="_blank"><ion-icon name="albums-outline" class="button-icon"></ion-icon> <span class="button-text">Slides</span></a>
-                            {% else %}
-                              <a href="{{ talk.slides | prepend: '/assets/pdf/' | relative_url }}" title="Slides" class="btn btn-light" role="button" target="_blank"><ion-icon name="albums-outline" class="button-icon"></ion-icon> <span class="button-text">Slides</span></a>
-                            {% endif %}
-                          {% endif %}
-                          {% if talk.video %}
-                            <a href="{{ talk.video }}" title="Video" class="btn btn-light" role="button" target="_blank"><ion-icon name="videocam-outline" class="button-icon"></ion-icon> <span class="button-text">Video</span></a>
-                          {% endif %}
+                          {% include link-buttons.html entry=talk %}
                         </div>
                       </div>
                     </div>
