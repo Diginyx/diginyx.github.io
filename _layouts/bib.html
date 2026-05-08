@@ -50,6 +50,9 @@
     {% if entry.code %}
       <a href="{{ entry.code }}" title="Code" class="btn btn-light" role="button" target="_blank"><ion-icon name="code-slash-outline" class="button-icon"></ion-icon> <span class="button-text">Code</span></a>
     {% endif %}
+    {% if entry.dataset %}
+      <a href="{{ entry.dataset }}" title="Dataset" class="btn btn-light" role="button" target="_blank"><ion-icon name="server-outline" class="button-icon"></ion-icon> <span class="button-text">Dataset</span></a>
+    {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
         <a href="{{ entry.poster }}" title="Poster" class="btn btn-light" role="button" target="_blank"><ion-icon name="easel-outline" class="button-icon"></ion-icon> <span class="button-text">Poster</span></a>
