@@ -33,3 +33,8 @@
   id: awards
   description:
   first: false
+
+- name: Activities
+  id: activities
+  description:
+  first: false

@@ -1,0 +1,21 @@
+# Clubs and organizations.
+# Fields:
+#   name  - club / organization name (required)
+#   role  - your role (e.g. President, Officer, Member) — optional
+#   date  - active date range (e.g. "Fall 2024 – Spring 2025") — optional
+#   org   - parent institution if not obvious — optional
+
+- name: Computer Science and Engineering Graduate Students
+  role: Treasurer
+  date: Fall 2024 – Spring 2025
+  org: University of Michigan
+
+- name: Artificial Intelligence Club
+  role: President
+  date: Fall 2024 – Spring 2025
+  org: University of Michigan
+
+- name: Competitive Cybersecurity and Cyber-Physical Club
+  role: President
+  date: Fall 2019 – Spring 2022
+  org: Boise State University

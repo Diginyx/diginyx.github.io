@@ -32,6 +32,8 @@ layout: default
   .tab-content .btn-light:hover ion-icon { color: #5C1A1B; }
   .tab-content .awards-list { margin-top: 0.5rem; padding-left: 1.2rem; }
   .tab-content .awards-list li { margin-bottom: 0.4rem; }
+  .tab-content .activities-list { margin-top: 0.5rem; padding-left: 1.2rem; }
+  .tab-content .activities-list li { margin-bottom: 0.4rem; }
   .tab-content .tab-intro { font-style: italic; color: #555; margin-bottom: 1rem; }
 </style>
 
@@ -257,6 +259,17 @@ layout: default
                   {% for award in site.data.awards %}
                     <li>
                       <strong>{{ award.name }}</strong>{% if award.amount %} ({{ award.amount }}){% endif %} <em>— {{ award.date }}</em>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% elsif section.name == "Activities" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <span><i>Clubs and organizations I've led or been a member of.</i></span>
+                <ul class="activities-list">
+                  {% for activity in site.data.activities %}
+                    <li>
+                      <strong>{{ activity.name }}</strong>{% if activity.role %} ({{ activity.role }}){% endif %}{% if activity.org %}, {{ activity.org }}{% endif %}{% if activity.date %} <em>— {{ activity.date }}</em>{% endif %}
                     </li>
                   {% endfor %}
                 </ul>
