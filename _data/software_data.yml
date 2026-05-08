@@ -1,0 +1,31 @@
+# Software & Data items shown on /software.html
+# Add an entry per project or dataset. Fields:
+#   name        - display title
+#   kind        - "software" | "data"
+#   description - short paragraph
+#   link        - canonical URL (repo, dataset landing page, etc.)
+#   repo        - optional GitHub URL
+#   doi         - optional DOI
+#   year        - optional year string
+#   tags        - optional list of short tags shown as badges
+
+- name: Example Project
+  kind: software
+  description: >
+    Short description of what this tool does and who it is for.
+  link: https://github.com/diginyx/example
+  repo: https://github.com/diginyx/example
+  year: 2026
+  tags:
+    - python
+    - cli
+
+- name: Example Dataset
+  kind: data
+  description: >
+    Short description of the dataset, how it was collected, and how to cite it.
+  link: https://example.com/dataset
+  doi: 10.0000/example
+  year: 2026
+  tags:
+    - dataset

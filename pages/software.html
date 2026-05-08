@@ -1,0 +1,97 @@
+---
+layout: page
+permalink: /software.html
+title: Software & Data
+header-img:
+last-updated: 2026-05-08
+---
+{% assign theme = site.data.themes[site.ui_theme] %}
+<div class="blogcard card-1 mb-4" style="width: 100%;">
+  <div class="card-body">
+    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
+  </div>
+</div>
+
+<style>
+  .sd-list { list-style: none; padding-left: 0; margin-left: 0; }
+  .sd-list > li { margin-bottom: 1.5rem; }
+  .sd-section {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #5C1A1B;
+    color: #5C1A1B;
+  }
+  .sd-title { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+  .sd-title a { color: #5C1A1B; text-decoration: none; }
+  .sd-title a:hover { text-decoration: underline; }
+  .sd-meta { font-size: 0.9rem; color: #555; margin-top: 0.2rem; }
+  .sd-desc { font-size: 0.95rem; margin-top: 0.2rem; }
+  .sd-links { margin-top: 0.5rem; }
+  .sd-links a.btn {
+    background-color: #5C1A1B;
+    color: #F5EDE4;
+    border: none;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .sd-links a.btn:hover { background-color: #7B1E1E; color: #F5EDE4; }
+  .sd-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+    background-color: rgba(92, 26, 27, 0.1);
+    color: #5C1A1B;
+    border-radius: 0.25rem;
+  }
+</style>
+
+{% assign software_items = site.data.software_data | where: "kind", "software" %}
+{% assign data_items = site.data.software_data | where: "kind", "data" %}
+
+{% if software_items.size > 0 %}
+  <h2 class="sd-section">Software</h2>
+  <ul class="sd-list">
+    {% for item in software_items %}
+      <li>
+        <div class="sd-title">
+          {% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+        </div>
+        {% if item.year %}<div class="sd-meta">{{ item.year }}</div>{% endif %}
+        {% if item.description %}<div class="sd-desc">{{ item.description }}</div>{% endif %}
+        {% if item.tags %}
+          <div>{% for tag in item.tags %}<span class="sd-tag">{{ tag }}</span>{% endfor %}</div>
+        {% endif %}
+        <div class="sd-links">
+          {% if item.repo %}<a class="btn btn-sm" href="{{ item.repo }}">Repo</a>{% endif %}
+          {% if item.doi %}<a class="btn btn-sm" href="https://doi.org/{{ item.doi }}">DOI</a>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if data_items.size > 0 %}
+  <h2 class="sd-section">Data</h2>
+  <ul class="sd-list">
+    {% for item in data_items %}
+      <li>
+        <div class="sd-title">
+          {% if item.link %}<a href="{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+        </div>
+        {% if item.year %}<div class="sd-meta">{{ item.year }}</div>{% endif %}
+        {% if item.description %}<div class="sd-desc">{{ item.description }}</div>{% endif %}
+        {% if item.tags %}
+          <div>{% for tag in item.tags %}<span class="sd-tag">{{ tag }}</span>{% endfor %}</div>
+        {% endif %}
+        <div class="sd-links">
+          {% if item.repo %}<a class="btn btn-sm" href="{{ item.repo }}">Repo</a>{% endif %}
+          {% if item.doi %}<a class="btn btn-sm" href="https://doi.org/{{ item.doi }}">DOI</a>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
