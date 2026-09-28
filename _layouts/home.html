@@ -225,7 +225,7 @@ layout: default
                         </div>
                       </div>
                       <p><i>{{ job.role }}</i></p>
-                      <p class="mb-1">{{ job.description }}</p>
+                      <div class="mb-1 job-description">{{ job.description | markdownify }}</div>
                       <small>{{ job.location }}</small>
                     </div>
                   </div>
@@ -244,7 +244,7 @@ layout: default
                         </div>
                       </div>
                       <p><i>{{ job.role }}</i></p>
-                      <p class="mb-1">{{ job.description }}</p>
+                      <div class="mb-1 job-description">{{ job.description | markdownify }}</div>
                       <small>{{ job.location }}</small>
                     </div>
                   </div>
