@@ -24,10 +24,11 @@
   role: "Undergraduate Researcher, Language & Intelligence Group"
   start: May 2022
   end: November 2022
-  description: >
-    Supervised by Dr. Jacob Andreas. Designed and built an interpretable ML model providing neuron
-    annotations using no data. Presented poster at the MIT Summer Research Program poster session and
-    delivered a lightning talk on the MIT Grad Diversity YouTube channel.
+  description: |
+    Supervised by Dr. Jacob Andreas.
+
+    - Designed and built an interpretable ML model providing neuron annotations using no data
+    - Presented a poster at the MIT Summer Research Program poster session and delivered a lightning talk on the MIT Grad Diversity YouTube channel
   location: Cambridge, MA, USA
 
 - title: "Department of Computer Science, Boise State University"
@@ -52,8 +53,10 @@
   role: "Undergraduate Researcher, Intelligent Security Group"
   start: June 2020
   end: August 2020
-  description: >
-    Supervised by Dr. Mina Guirguis; funded by NSF as a Smart & Connected Communities REU site. Designed
-    and built a game and reward system to secure a simulated water tank using game theory. Simulated and
-    secured a water tank with check blocks acting as both an intrusion detection and prevention system.
+  description: |
+    Supervised by Dr. Mina Guirguis; funded by NSF as a Smart & Connected Communities REU site.
+
+    - Designed and built a game and reward system to secure a simulated water tank using game theory
+    - Simulated and secured a water tank with check blocks acting as both an intrusion detection and prevention system
+    - Prepared presentations and a report on research findings for REU participants and organizers
   location: San Marcos, TX, USA

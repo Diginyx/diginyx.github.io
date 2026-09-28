@@ -4,39 +4,36 @@
   StartDate: Jan 2023
   EndDate: May 2023
   icon: /assets/img/icons/bsu.png
-  description: >
-    Taught students how concepts in class apply to their programming assignments;
-    educated students on how concepts taught in class may be used in industry settings;
-    assisted students in planning out and debugging their programming assignments.
-
+  description: |
+    - Taught students how concepts in class apply to their programming assignments
+    - Educated students on how concepts taught in class may be used in industry settings
+    - Assisted students in planning out and debugging their programming assignments
 - School: Boise State University
   Department: Department of Computer Science
   Program: Tutor, Introduction to Theory of Computation
   StartDate: Jan 2021
   EndDate: May 2021
   icon: /assets/img/icons/bsu.png
-  description: >
-    Assisted students by guiding them through their assignments;
-    facilitated individual and group tutoring sessions.
-
+  description: |
+    - Assisted students by guiding them through their assignments
+    - Facilitated individual and group tutoring sessions
 - School: Boise State University
   Department: Department of Computer Science
   Program: Tutor, Data Structures
   StartDate: Aug 2020
   EndDate: Dec 2020
   icon: /assets/img/icons/bsu.png
-  description: >
-    Worked with students to enhance their understanding of topics discussed in class;
-    guided students through debugging their code and understanding how their code worked;
-    communicated and effectively explained the purpose of data structures and how they worked.
-
+  description: |
+    - Worked with students to enhance their understanding of topics discussed in class
+    - Guided students through debugging their code and understanding how their code worked
+    - Communicated and effectively explained the purpose of data structures and how they worked
 - School: Boise State University
   Department: Department of Electrical and Computer Engineering
   Program: Lab Assistant, Microprocessors
   StartDate: Aug 2020
   EndDate: Dec 2020
   icon: /assets/img/icons/bsu.png
-  description: >
-    Guided students through lab work and debugging hardware and software issues;
-    helped students understand concepts related to the labs and how the labs demonstrated these concepts;
-    assisted professor in grading papers.
+  description: |
+    - Guided students through lab work and debugging hardware and software issues
+    - Helped students understand concepts related to the labs and how the labs demonstrated these concepts
+    - Assisted professor in grading papers

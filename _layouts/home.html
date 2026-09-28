@@ -179,7 +179,7 @@ layout: default
                         </div>
                         <p><i>{{ entry.School }}</i></p>
                       </div>
-                      <p class="mb-1">{{ entry.description }}</p>
+                      <div class="mb-1 job-description">{{ entry.description | markdownify }}</div>
                       <small>{{ entry.Department }}</small>
                     </div>
                   </div>
