@@ -4,6 +4,7 @@
   school: University of Michigan
   icon: /assets/img/icons/umich_seal.png
   details:
+    - "GPA: 4.0"
     - "Advisor: Dr. Joyce Chai"
 
 - degree: Master of Science
@@ -12,6 +13,7 @@
   school: University of Michigan
   icon: /assets/img/icons/umich_seal.png
   details:
+    - "GPA: 4.0"
     - "Advisor: Dr. Joyce Chai"
 
 - degree: Bachelor of Science
@@ -20,5 +22,5 @@
   school: Boise State University
   icon: /assets/img/icons/boisestate_seal.png
   details:
-    - "Magna Cum Laude"
+    - "GPA: 3.889, Magna Cum Laude, Dean's List"
     - "Advisor: Dr. Casey Kennington"

@@ -3,12 +3,21 @@
   start: August 2023
   end: Present
   description: >
-    Supervised by Dr. Joyce Chai. Created a safety-centric dataset using PDDL to generate trajectories
-    demonstrating how to complete household tasks while mitigating hazards rendered in the AI2-Thor simulator.
-    Evaluated 11 state-of-the-art VLMs on hazard recognition via Visual Question Answering (VQA) and safe
-    plan generation as an embodied agent performing household tasks while proactively mitigating hazards.
-    Developed a decoupled multi-agent framework that separated hazard recognition from task execution,
-    resulting in increased safety-planning success rates.
+    Supervised by Dr. Joyce Chai. Project 2 (under review at HRI 2027, co-first author): Designed and built
+    an embodied conversational robot that encourages individuals living with cognitive decline to reflect on
+    their resilience, co-designed with 10 dementia experts and 14 people with cognitive impairment. Developed
+    a structured dialogue manager that steps through rapport-building, challenges, and resilience reflection
+    phases; blinded raters scored its pacing above end-to-end LLM prompting in 35 of 40 simulated
+    conversations. Fine-tuned Qwen3-VL-32B on 15K dialogue turns distilled from Gemini 2.5 Pro, plus a
+    resilience topic classifier reaching 84% accuracy; served both on-premise with vLLM to protect
+    participant privacy. Deployed in 7 lab and 3 in-home studies with individuals living with cognitive
+    decline. Project 1 (SafetyALFRED, Findings of ACL 2026): Created a safety-centric dataset using PDDL to
+    generate trajectories that complete household tasks while mitigating six categories of kitchen hazards
+    across 30 AI2-THOR scenes. Evaluated 11 state-of-the-art VLMs on hazard recognition and safe embodied
+    planning, finding models correctly recognized hazards up to 92% of the time but fixed them less than 60%
+    of the time. Developed a decoupled multi-agent framework separating hazard recognition from task
+    execution, raising the rate at which Qwen3-VL-32B fixed appliance-misuse hazards from 0.7% to 71.1%.
+    Open-sourced the code and dataset.
   location: Ann Arbor, MI, USA
 
 - title: "Department of Electrical Engineering and Computer Science, MIT"
@@ -28,9 +37,13 @@
   description: >
     Supervised by Dr. Casey Kennington. Designed and built an incremental spoken dialogue system capable
     of transcribing and understanding speech, detecting and gaining a concrete understanding of objects,
-    and mapping objects in its environment using SLAM and the Anki Cozmo robot. Gathered human appraisals
-    and descriptions of robot emotional behaviors from participants and analyzed the data. Presented at
-    SIGdial 2022 and LREC 2022.
+    and mapping objects in its environment using SLAM and the Anki Cozmo robot. Approximated object
+    permanence by extending Cozmo's SLAM map to remember each object it has seen and its location; in an
+    A/B study with 24 participants, this raised the robot's accuracy answering what/where questions about
+    learned objects from 70.0% to 82.7% and nearly doubled the questions participants asked (SIGdial 2022).
+    Collected and analyzed HADREB, a dataset of over 1,000 robot emotional behaviors described and rated by
+    32 participants on the Misty II and Cozmo robots, and showed a zero-shot language model predicts
+    perceived emotion from the descriptions with up to 79.3% accuracy (LREC 2022).
   location: Boise, ID, USA
 
 - title: "Department of Computer Science, Texas State University"
