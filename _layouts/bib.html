@@ -16,9 +16,10 @@
         {% for author in entry.author_array %}
           {%- assign name = author.first | append: " " | append: author.last -%}
           {%- assign is_me = false -%}
-          {%- if author.last == site.scholar.last_name -%}{%- assign is_me = true -%}{%- endif -%}
+          {%- assign last_clean = author.last | remove: "*" -%}
+          {%- if last_clean == site.scholar.last_name -%}{%- assign is_me = true -%}{%- endif -%}
           {%- capture rendered -%}
-            {%- if is_me -%}<u>{{name}}</u>{%- elsif site.data.coauthors[author.last] -%}<a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{name}}</a>{%- else -%}{{name}}{%- endif -%}
+            {%- if is_me -%}<u>{{name}}</u>{%- elsif site.data.coauthors[last_clean] -%}<a href="{{site.data.coauthors[last_clean].url}}" target="_blank">{{name}}</a>{%- else -%}{{name}}{%- endif -%}
           {%- endcapture -%}
           {%- if forloop.length == 1 -%}
             {{ rendered }}
