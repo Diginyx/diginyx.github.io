@@ -115,7 +115,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 **Ph.D. Candidate**, SLED Lab, University of Michigan &nbsp;·&nbsp; *Aug 2023 – Present*<br>
 Advised by Dr. Joyce Chai
-- **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: Building SafetyBehavior, an OmniGibson-based benchmark of household hazards drawn from real injury data on long-horizon BEHAVIOR-1K tasks, evaluating both hierarchical (VLM planner → VLA controller) and unified VLM-VLA systems. Using mechanistic interpretability to trace where the safety signal is lost and how to amplify it.
+- **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: Building SafetyBehavior, an OmniGibson-based benchmark of household hazards drawn from real injury data ([NEISS](https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data)) on long-horizon BEHAVIOR-1K tasks, evaluating both hierarchical (VLM planner → VLA controller) and unified VLM-VLA systems. Using mechanistic interpretability to trace where the safety signal is lost and how to amplify it.
 - **ReMI** *(HRI 2027, under review)*: A conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience. Now being extended into a multi-week in-home study.
 - **SafetyALFRED** *(Findings of ACL 2026)*: A benchmark exposing a gap between recognizing and acting: multimodal LLMs identify kitchen hazards in question answering up to 92% of the time, but fix them less than 60% of the time as embodied agents.
 
