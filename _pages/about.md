@@ -114,19 +114,23 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 # 💻 Research Experience
 
 **Ph.D. Candidate**, SLED Lab, University of Michigan &nbsp;·&nbsp; *2023 – Present*<br>
-With Dr. Joyce Chai, I study how embodied agents handle safety and how robots can support people through conversation:
-- **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: using mechanistic interpretability to find where safety information lives as a vision-language planner hands instructions to a vision-language-action controller, and how to amplify it.
-- **ReMI** *(HRI 2027, under review)*: a conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience; now being extended into a multi-week in-home study.
-- **SafetyALFRED** *(Findings of ACL 2026)*: a benchmark showing multimodal LLMs recognize household hazards far more often than they fix them.
+Advised by Dr. Joyce Chai
+- **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: Building a safety evaluation framework for long-horizon household tasks in BEHAVIOR-1K, including improvements to the OmniGibson simulator. Using mechanistic interpretability to find where safety information lives as a vision-language planner hands instructions to a vision-language-action controller, and how to amplify it.
+- **ReMI** *(HRI 2027, under review)*: A conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience. Now being extended into a multi-week in-home study.
+- **SafetyALFRED** *(Findings of ACL 2026)*: A benchmark exposing a gap between recognizing and acting: multimodal LLMs identify kitchen hazards in question answering up to 92% of the time, but fix them less than 60% of the time as embodied agents.
 
 **Undergraduate Researcher**, SLIM Lab, Boise State University &nbsp;·&nbsp; *2021 – 2023*<br>
-With Dr. Casey Kennington, gave a Cozmo robot object permanence for grounded spoken dialogue (SIGdial 2022) and built HADREB, a dataset of how people perceive robot emotions (LREC 2022).
+Advised by Dr. Casey Kennington
+- **Object permanence for spoken dialogue** *(SIGdial 2022)*: Gave a Cozmo robot memory of the objects it has seen and where, raising its accuracy answering questions about them from 70.0% to 82.7%.
+- **HADREB** *(LREC 2022)*: Built a dataset of over 1,000 robot emotional behaviors described and rated by 32 participants.
 
 **Undergraduate Researcher**, Language & Intelligence Group, MIT &nbsp;·&nbsp; *2022*<br>
-With Dr. Jacob Andreas through the MIT Summer Research Program, built an interpretable model that annotates neurons without data.
+Advised by Dr. Jacob Andreas · MIT Summer Research Program
+- Built an interpretable model that annotates neurons without data.
 
 **Undergraduate Researcher**, Intelligent Security Group, Texas State University &nbsp;·&nbsp; *2020*<br>
-With Dr. Mina Guirguis through an NSF REU, used game theory to secure a simulated water tank.
+Advised by Dr. Mina Guirguis · NSF REU
+- Used game theory to secure a simulated water tank.
 
 
 # 🏢 Industry Experience
