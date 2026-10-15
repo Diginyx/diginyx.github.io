@@ -169,3 +169,57 @@ h1:before, .anchor:before {
     text-shadow: 0 0 6px rgba(0, 0, 0, .8);
     cursor: pointer;
 }
+
+// Readable body text: a little larger than the template's 15px default
+.page__content {
+    font-size: 16.5px;
+    line-height: 1.6;
+}
+
+// Publication entries, styled like the previous site: bold title,
+// authors (own name underlined), italic venue, then link buttons
+.bib-title {
+    font-weight: 700;
+    line-height: 1.35;
+}
+.bib-authors {
+    margin-top: .3em;
+}
+.bib-venue {
+    margin-top: .2em;
+    font-style: italic;
+    color: #555;
+}
+.paper-box--text-only {
+    padding: 1.2em 0;
+    .paper-box-text {
+        padding-left: 0 !important;
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+}
+.pub-links {
+    margin-top: .6em;
+}
+.pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .3em;
+    margin: 0 .3rem .3rem 0;
+    padding: .3rem .65rem;
+    border: 1px solid #f8f9fa;
+    border-radius: .25rem;
+    background-color: #f8f9fa;
+    color: #5C1A1B !important;
+    font-size: .9em;
+    line-height: 1.4;
+    text-decoration: none !important;
+    ion-icon { color: #5C1A1B; }
+    &:hover { background-color: #e9ecef; }
+}
+.pub-btn--inline {
+    margin: .15rem 0 .15rem .3rem;
+    padding: .1rem .5rem;
+    font-size: .85em;
+    vertical-align: middle;
+}
