@@ -106,36 +106,36 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 
 # 📖 Education
-- *2023 – 2028 (expected)*, **Ph.D. in Computer Science and Engineering**, University of Michigan · GPA 4.0
-- *2023 – 2025*, **M.S. in Computer Science and Engineering**, University of Michigan · GPA 4.0
-- *2018 – 2023*, **B.S. in Computer Science, Minor in Applied Mathematics**, Boise State University · Magna Cum Laude
+- *Aug 2023 – May 2028 (expected)*, **Ph.D. in Computer Science and Engineering**, University of Michigan · GPA 4.0
+- *Aug 2023 – May 2025*, **M.S. in Computer Science and Engineering**, University of Michigan · GPA 4.0
+- *Fall 2018 – May 2023*, **B.S. in Computer Science, Minor in Applied Mathematics**, Boise State University · Magna Cum Laude
 
 
 # 💻 Research Experience
 
-**Ph.D. Candidate**, SLED Lab, University of Michigan &nbsp;·&nbsp; *2023 – Present*<br>
+**Ph.D. Candidate**, SLED Lab, University of Michigan &nbsp;·&nbsp; *Aug 2023 – Present*<br>
 Advised by Dr. Joyce Chai
 - **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: Building a safety evaluation framework for long-horizon household tasks in BEHAVIOR-1K, including improvements to the OmniGibson simulator. Using mechanistic interpretability to find where safety information lives as a vision-language planner hands instructions to a vision-language-action controller, and how to amplify it.
 - **ReMI** *(HRI 2027, under review)*: A conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience. Now being extended into a multi-week in-home study.
 - **SafetyALFRED** *(Findings of ACL 2026)*: A benchmark exposing a gap between recognizing and acting: multimodal LLMs identify kitchen hazards in question answering up to 92% of the time, but fix them less than 60% of the time as embodied agents.
 
-**Undergraduate Researcher**, SLIM Lab, Boise State University &nbsp;·&nbsp; *2021 – 2023*<br>
+**Undergraduate Researcher**, SLIM Lab, Boise State University &nbsp;·&nbsp; *Aug 2021 – Aug 2023*<br>
 Advised by Dr. Casey Kennington
 - **Object permanence for spoken dialogue** *(SIGdial 2022)*: Gave a Cozmo robot memory of the objects it has seen and where, raising its accuracy answering questions about them from 70.0% to 82.7%.
 - **HADREB** *(LREC 2022)*: Built a dataset of over 1,000 robot emotional behaviors described and rated by 32 participants.
 
-**Undergraduate Researcher**, Language & Intelligence Group, MIT &nbsp;·&nbsp; *2022*<br>
+**Undergraduate Researcher**, Language & Intelligence Group, MIT &nbsp;·&nbsp; *May 2022 – Nov 2022*<br>
 Advised by Dr. Jacob Andreas · MIT Summer Research Program
 - Built an interpretable model that annotates neurons without data.
 
-**Undergraduate Researcher**, Intelligent Security Group, Texas State University &nbsp;·&nbsp; *2020*<br>
+**Undergraduate Researcher**, Intelligent Security Group, Texas State University &nbsp;·&nbsp; *Jun 2020 – Aug 2020*<br>
 Advised by Dr. Mina Guirguis · NSF REU
 - Used game theory to secure a simulated water tank.
 
 
 # 🏢 Industry Experience
 
-**Software Engineer Intern**, Paylocity &nbsp;·&nbsp; *2021*<br>
+**Software Engineer Intern**, Paylocity &nbsp;·&nbsp; *May 2021 – Aug 2021*<br>
 Built and shipped full-stack features (React/Redux, C#/.NET, SQL) on a 13-person Agile team.
 
 
@@ -156,10 +156,10 @@ Built and shipped full-stack features (React/Redux, C#/.NET, SQL) on a 13-person
 
 
 # 🧑‍🏫 Teaching
-- *Spring 2023*, Tutor, **Operating Systems**, Boise State University
-- *Spring 2021*, Tutor, **Introduction to Theory of Computation**, Boise State University
-- *Fall 2020*, Tutor, **Data Structures**, Boise State University
-- *Fall 2020*, Lab Assistant, **Microprocessors**, Boise State University
+- *Jan 2023 – May 2023*, Tutor, **Operating Systems**, Boise State University
+- *Jan 2021 – May 2021*, Tutor, **Introduction to Theory of Computation**, Boise State University
+- *Aug 2020 – Dec 2020*, Tutor, **Data Structures**, Boise State University
+- *Aug 2020 – Dec 2020*, Lab Assistant, **Microprocessors**, Boise State University
 
 
 # 👔 Service & Leadership
