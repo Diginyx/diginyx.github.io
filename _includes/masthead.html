@@ -5,7 +5,9 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {%- comment -%} Version PDF links per build so browsers don't serve a cached CV/resume {%- endcomment -%}
+            {%- capture href -%}{{ domain }}{{ link.url }}{% if link.url contains '.pdf' %}?v={{ site.time | date: '%s' }}{% endif %}{%- endcapture -%}
+            <li class="masthead__menu-item"><a href="{{ href }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
