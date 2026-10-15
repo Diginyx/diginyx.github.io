@@ -21,7 +21,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 # 🔥 News
 - *2026.07*: &nbsp;🎉 Presented **[SafetyALFRED](https://aclanthology.org/2026.findings-acl.1852/)** at [ACL 2026](https://2026.aclweb.org/) (Findings) in San Diego.
 - *2026.07*: &nbsp;🎉 **[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/pdf?id=51914Feknq)** appeared at **ICML 2026** in Seoul.
-- *2026*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
+- *Spring 2026*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
 - *2026.01*: &nbsp;🎓 Passed my preliminary exam and became a **Ph.D. candidate**.
 - *2025.08*: &nbsp;📄 **[rrSDS 2.0](https://aclanthology.org/2025.sigdial-1.51/)** appeared at **SIGdial 2025** in Avignon.
 - *2025.05*: &nbsp;🎓 Received my M.S. in Computer Science and Engineering from the University of Michigan.
@@ -147,22 +147,22 @@ Built and shipped full-stack features (React/Redux, C#/.NET, SQL) on a 13-person
 
 
 # 🎖 Honors and Awards
-- *2026 – 2027*, Gemini Academic Program Award ($10,000)
-- *2023 – 2027*, NSF Graduate Research Fellowship ($159,000)
-- *2023*, Boise State University Top Ten Scholar
-- *2022*, Barry M. Goldwater Scholarship ($7,500)
-- *2018 – 2023*, Dean's List, Boise State University
-- *2018*, Federal Employee Education & Assistance Fund Scholarship ($1,000)
+- *Spring 2026 – Spring 2027*, Gemini Academic Program Award ($10,000)
+- *Fall 2023 – Spring 2027*, NSF Graduate Research Fellowship ($159,000)
+- *Spring 2023*, Boise State University Top Ten Scholar
+- *Fall 2022 – Spring 2023*, Barry M. Goldwater Scholarship ($7,500)
+- *Fall 2018 – Spring 2023*, Dean's List, Boise State University
+- *Fall 2018*, Federal Employee Education & Assistance Fund Scholarship ($1,000)
 
 
 # 🧑‍🏫 Teaching
-- *2023*, Tutor, **Operating Systems**, Boise State University
-- *2021*, Tutor, **Introduction to Theory of Computation**, Boise State University
-- *2020*, Tutor, **Data Structures**, Boise State University
-- *2020*, Lab Assistant, **Microprocessors**, Boise State University
+- *Spring 2023*, Tutor, **Operating Systems**, Boise State University
+- *Spring 2021*, Tutor, **Introduction to Theory of Computation**, Boise State University
+- *Fall 2020*, Tutor, **Data Structures**, Boise State University
+- *Fall 2020*, Lab Assistant, **Microprocessors**, Boise State University
 
 
 # 👔 Service & Leadership
-- *2024 – 2025*, Treasurer, **Computer Science and Engineering Graduate Students**, University of Michigan
-- *2024 – 2025*, President, **Artificial Intelligence Club**
-- *2019 – 2022*, President, **Competitive Cybersecurity and Cyber-Physical Club**, Boise State University
+- *Fall 2024 – Spring 2025*, Treasurer, **Computer Science and Engineering Graduate Students**, University of Michigan
+- *Fall 2024 – Spring 2025*, President, **Artificial Intelligence Club**
+- *Fall 2019 – Spring 2022*, President, **Competitive Cybersecurity and Cyber-Physical Club**, Boise State University
