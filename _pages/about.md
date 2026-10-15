@@ -19,14 +19,18 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 
 # 🔥 News
-- *2026.07*: &nbsp;🎉 Presented **SafetyALFRED** at [ACL 2026](https://2026.aclweb.org/) (Findings) in San Diego.
-- *2026.07*: &nbsp;🎉 **The Mechanistic Emergence of Symbol Grounding in Language Models** appeared at **ICML 2026** in Seoul.
+- *2026.07*: &nbsp;🎉 Presented **[SafetyALFRED](https://aclanthology.org/2026.findings-acl.1852/)** at [ACL 2026](https://2026.aclweb.org/) (Findings) in San Diego.
+- *2026.07*: &nbsp;🎉 **[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/forum?id=51914Feknq)** appeared at **ICML 2026** in Seoul.
+- *2026.04*: &nbsp;📄 Preprint of **SafetyALFRED** released on [arXiv](https://arxiv.org/abs/2604.19638), with [code](https://github.com/sled-group/SafetyALFRED) and [dataset](https://huggingface.co/datasets/Diginyx/SafetyALFRED/tree/main).
 - *2026*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
 - *2026.01*: &nbsp;🎓 Passed my preliminary exam and became a **Ph.D. candidate**.
-- *2025.08*: &nbsp;📄 **rrSDS 2.0** appeared at **SIGdial 2025** in Avignon.
+- *2025.10*: &nbsp;📄 Preprint of **The Mechanistic Emergence of Symbol Grounding in Language Models** released on [arXiv](https://arxiv.org/abs/2510.13796).
+- *2025.08*: &nbsp;📄 **[rrSDS 2.0](https://aclanthology.org/2025.sigdial-1.51/)** appeared at **SIGdial 2025** in Avignon.
 - *2025.05*: &nbsp;🎓 Received my M.S. in Computer Science and Engineering from the University of Michigan.
 - *2023.08*: &nbsp;🎉 Joined the Ph.D. program in Computer Science and Engineering at the University of Michigan, working with Dr. Joyce Chai in the SLED Lab.
 - *2023.03*: &nbsp;🏆 Received the **NSF Graduate Research Fellowship**.
+- *2022.09*: &nbsp;🎤 Presented **[Symbol and Communicative Grounding through Object Permanence with a Mobile Robot](https://aclanthology.org/2022.sigdial-1.14/)** at **SIGdial 2022** in Edinburgh.
+- *2022.06*: &nbsp;🎉 **[HADREB: Human Appraisals and (English) Descriptions of Robot Emotional Behaviors](https://aclanthology.org/2022.lrec-1.617/)** appeared at **LREC 2022** in Marseille.
 
 
 # 📝 Publications
