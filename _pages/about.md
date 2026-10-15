@@ -135,8 +135,8 @@ Advised by Dr. Mina Guirguis · NSF REU
 
 # 🏢 Industry Experience
 
-**Software Engineer Intern**, Paylocity &nbsp;·&nbsp; *May 2021 – Aug 2021*<br>
-Built and shipped full-stack features (React/Redux, C#/.NET, SQL) on a 13-person Agile team.
+**Software Engineer Intern**, Paylocity &nbsp;·&nbsp; *May 2021 – Aug 2021*
+- Built and shipped full-stack features (React/Redux, C#/.NET, SQL) on a 13-person Agile team.
 
 
 # 💬 Presentations
