@@ -19,20 +19,17 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 
 # 🔥 News
-- *2026.10*: &nbsp;🤖 Our paper on a conversational robot that elicits resilience reflection for individuals living with cognitive decline is under review at **HRI 2027** (co-first author).
 - *2026.07*: &nbsp;🎉 Presented **SafetyALFRED** at [ACL 2026](https://2026.aclweb.org/) (Findings) in San Diego.
 - *2026.07*: &nbsp;🎉 **The Mechanistic Emergence of Symbol Grounding in Language Models** appeared at **ICML 2026** in Seoul.
 - *2026*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
+- *2026.01*: &nbsp;🎓 Passed my preliminary exam and became a **Ph.D. candidate**.
 - *2025.08*: &nbsp;📄 **rrSDS 2.0** appeared at **SIGdial 2025** in Avignon.
 - *2025.05*: &nbsp;🎓 Received my M.S. in Computer Science and Engineering from the University of Michigan.
+- *2023.08*: &nbsp;🎉 Joined the Ph.D. program in Computer Science and Engineering at the University of Michigan, working with Dr. Joyce Chai in the SLED Lab.
+- *2023.03*: &nbsp;🏆 Received the **NSF Graduate Research Fellowship**.
 
 
 # 📝 Publications
-
-<sup>\*</sup> Equal contribution
-
-- <span class="badge-inline">HRI 2027 (Under Review)</span> **Robot to Elicit Resilience Reflection for Individuals Living with Cognitive Decline**<br>
-  Long-Jing Hsu<sup>\*</sup>, **Josue Torres-Fonseca<sup>\*</sup>**, Janice Bays, Joyce Chai, Patricia Alves-Oliveira
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Findings</div><img src='images/papers/SafetyALFRED.png' alt="SafetyALFRED" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -150,7 +147,7 @@ Supervised by Dr. Mina Guirguis · NSF Research Experiences for Undergraduates (
 - Applied Agile and Scrum methodologies; gained full-stack experience with JavaScript, React/Redux, C#, .NET, SQL, and Git
 
 
-# 📖 Educations
+# 📖 Education
 - *2023.08 – 2028.05 (expected)*, **Ph.D. in Computer Science and Engineering**, University of Michigan, Ann Arbor. GPA: 4.0. Advisor: Dr. Joyce Chai.
 - *2023.08 – 2025.05*, **M.S. in Computer Science and Engineering**, University of Michigan, Ann Arbor. GPA: 4.0. Advisor: Dr. Joyce Chai.
 - *2018.08 – 2023.05*, **B.S. in Computer Science, Minor in Applied Mathematics**, Boise State University. GPA: 3.889, Magna Cum Laude, Dean's List. Advisor: Dr. Casey Kennington.

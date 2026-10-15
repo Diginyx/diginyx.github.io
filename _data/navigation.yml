@@ -9,14 +9,29 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Experience"
+  - title: "Research Experience"
     url: "/#-research-experience"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Industry Experience"
+    url: "/#-industry-experience"
+
+  - title: "Education"
+    url: "/#-education"
+
+  - title: "Talks & Presentations"
+    url: "/#-talks--presentations"
 
   - title: "Awards"
     url: "/#-honors-and-awards"
 
+  - title: "Teaching"
+    url: "/#-teaching"
+
+  - title: "Service & Leadership"
+    url: "/#-service--leadership"
+
   - title: "CV"
     url: "/assets/pdf/vitae.pdf"
+
+  - title: "Resume"
+    url: "/assets/pdf/resume.pdf"
