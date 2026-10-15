@@ -1,3 +1,15 @@
-# You're looking at my website source code!!!!
+# josuetorresfonseca.com
 
-Website design is based on theme Built By Tyler Butler, See it on [Github](https://github.com/tcbutler320/Jekyll-Theme-Dumbarton)
+Personal academic homepage, built on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) (MIT License).
+
+- Page content: `_pages/about.md`
+- Sidebar links and site settings: `_config.yml`
+- Top navigation: `_data/navigation.yml`
+- CV / resume PDFs: `assets/pdf/vitae.pdf`, `assets/pdf/resume.pdf`
+
+Local preview (Ruby 3.3):
+
+```
+bundle install
+bundle exec jekyll serve
+```
