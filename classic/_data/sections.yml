@@ -1,0 +1,35 @@
+- name: Education
+  id: education
+  description:
+  first: true
+
+- name: Publications
+  id: publications
+  description:
+  url: publications.html
+  first: false
+
+- name: Talks
+  id: talks
+  description:
+  first: false
+
+- name: Teaching
+  id: teaching
+  description:
+  first: false
+
+- name: Academic Jobs
+  id: academic
+  description:
+  first: false
+
+- name: Industry Jobs
+  id: industry
+  description:
+  first: false
+
+- name: Awards
+  id: awards
+  description:
+  first: false

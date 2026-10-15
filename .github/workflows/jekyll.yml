@@ -33,6 +33,18 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      # Previous (Dumbarton) design, served at /classic/. It has its own Gemfile
+      # (jekyll-scholar), so it is built after the main site, into _site/classic.
+      - name: Build classic site
+        working-directory: classic
+        run: |
+          bundle install
+          bundle exec jekyll build --destination ../_site/classic --baseurl "${{ steps.pages.outputs.base_path }}/classic"
+        env:
+          JEKYLL_ENV: production
+          BUNDLE_GEMFILE: ${{ github.workspace }}/classic/Gemfile
+          BUNDLE_PATH: ${{ github.workspace }}/classic/vendor/bundle
+
       - uses: actions/upload-pages-artifact@v3
 
   deploy:

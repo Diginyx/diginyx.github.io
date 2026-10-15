@@ -1,0 +1,53 @@
+---
+---
+
+<div class="row bib-entry" style="margin-bottom: 1.5rem;">
+    {% if entry.preview %}
+      <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="mr-3 publication-img clickable-image" alt="{{entry.title}}">
+    {% endif %}
+    <div id="{{entry.key}}" class="col">
+    {% if entry.type == "thesis" %}
+      {{reference}}
+    {% else %}
+      <div class="bib-title" style="font-weight: 700;">
+        <strong>{{entry.title}}</strong>
+      </div>
+      <div class="bib-authors">
+        {% for author in entry.author_array %}
+          {%- assign name = author.first | append: " " | append: author.last -%}
+          {%- assign is_me = false -%}
+          {%- assign last_clean = author.last | remove: "*" -%}
+          {%- if last_clean == site.scholar.last_name -%}{%- assign is_me = true -%}{%- endif -%}
+          {%- capture rendered -%}
+            {%- if is_me -%}<u>{{name}}</u>{%- elsif site.data.coauthors[last_clean] -%}<a href="{{site.data.coauthors[last_clean].url}}" target="_blank">{{name}}</a>{%- else -%}{{name}}{%- endif -%}
+          {%- endcapture -%}
+          {%- if forloop.length == 1 -%}
+            {{ rendered }}
+          {%- elsif forloop.length == 2 -%}
+            {%- if forloop.first -%}{{ rendered }} and {%- else -%}{{ rendered }}{%- endif -%}
+          {%- else -%}
+            {%- if forloop.last -%}and {{ rendered }}{%- else -%}{{ rendered }},{{ " " }}{%- endif -%}
+          {%- endif -%}
+        {% endfor %}
+      </div>
+      <div class="bib-venue"><em>
+      {% if entry.type == "article" %}
+        {{entry.journal}}{% if entry.year %} {{entry.year}}{% endif %}{% if entry.address %} -- {{entry.address}}{% endif %}
+      {% elsif entry.type == "inproceedings" %}
+        {{entry.booktitle}}{% if entry.year %} {{entry.year}}{% endif %}{% if entry.address %} -- {{entry.address}}{% endif %}
+      {% endif %}
+      </em></div>
+    {% endif %}
+
+    <div class="links">
+    {% include link-buttons.html entry=entry %}
+    </div>
+
+    <!-- Hidden abstract block -->
+    {% if entry.abstract %}
+    <div class="abstract hidden">
+      <p>{{ entry.abstract }}</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

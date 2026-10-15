@@ -1,0 +1,72 @@
+- title: "Computer Science and Engineering Division, University of Michigan"
+  role: "PhD Candidate, Situated Language and Embodied Dialogue Group"
+  start: August 2023
+  end: Present
+  description: |
+    Supervised by Dr. Joyce Chai.
+
+    **Tracing the Safety Signal in VLM → VLA Robot Pipelines** (ongoing)
+
+    - Building SafetyBehavior, an OmniGibson-based benchmark where robots must recognize and mitigate hazards drawn from real injury data ([NEISS](https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data)) while completing BEHAVIOR-1K tasks
+    - Evaluating high-level planning (e.g., "wash the dishes") and the low-level control that carries it out within the same task, for both hierarchical and unified VLM-VLA systems
+    - Using mechanistic interpretability to trace where the safety signal lives and how it travels from planner to action, and developing methods to amplify it
+
+    **ReMI Longitudinal: Building Resilience through Multi-Week Robot Interaction** (ongoing)
+
+    - Extending ReMI into a 2-week in-home deployment that aims to strengthen resilience in individuals living with cognitive decline through resilience education, guided discussion, and mindfulness practice
+
+    **ReMI: A Conversational Robot to Elicit Resilience Reflection** (under review at HRI 2027, co-first author)
+
+    - Designed and built an embodied conversational robot that encourages individuals living with cognitive decline to reflect on their resilience, co-designed with 10 dementia experts and 14 people with cognitive impairment
+    - Developed a structured dialogue manager that steps through rapport-building, challenges, and resilience reflection phases; blinded raters scored its pacing above end-to-end LLM prompting in 35 of 40 simulated conversations
+    - Fine-tuned Qwen3-VL-32B on 15K dialogue turns distilled from Gemini 2.5 Pro, plus a resilience topic classifier reaching 84% accuracy; served both on-premise with vLLM to protect participant privacy
+    - Deployed in 7 lab and 3 in-home studies with individuals living with cognitive decline
+
+    **SafetyALFRED: Evaluating Safety-Conscious Planning of Multimodal LLMs** (Findings of ACL 2026)
+
+    - Created a safety-centric dataset using PDDL to generate trajectories that complete household tasks while mitigating six categories of kitchen hazards across 30 AI2-THOR scenes
+    - Evaluated 11 state-of-the-art VLMs and found a gap between recognizing and acting: models identified hazards in question answering up to 92% of the time, but fixed them less than 60% of the time as embodied agents
+    - Developed a decoupled multi-agent framework separating hazard recognition from task execution, raising the rate at which Qwen3-VL-32B fixed appliance-misuse hazards from 0.7% to 71.1%
+    - Open-sourced the code and dataset; presented a poster at ACL 2026
+  location: Ann Arbor, MI, USA
+
+- title: "Department of Electrical Engineering and Computer Science, MIT"
+  role: "Undergraduate Researcher, Language & Intelligence Group"
+  start: May 2022
+  end: November 2022
+  description: |
+    Supervised by Dr. Jacob Andreas through the MIT Summer Research Program (MSRP).
+
+    - Designed and built an interpretable ML model providing neuron annotations using no data
+    - Presented a poster at the MIT Summer Research Program poster session and delivered a lightning talk on the MIT Grad Diversity YouTube channel
+  location: Cambridge, MA, USA
+
+- title: "Department of Computer Science, Boise State University"
+  role: "Undergraduate Researcher, Speech Language and Interactive Machines Group"
+  start: August 2021
+  end: August 2023
+  description: |
+    Supervised by Dr. Casey Kennington.
+
+    **Symbol and Communicative Grounding through Object Permanence on a Mobile Robot** (SIGdial 2022)
+
+    - Studied how object permanence helps a robot learn language, building an incremental spoken dialogue system that transcribes and understands speech, detects and grounds objects, and maps them with SLAM on the Anki Cozmo robot
+    - Extended Cozmo's SLAM map to remember each object it has seen and its location; in an A/B study with 24 participants, this raised the robot's accuracy answering what/where questions about learned objects from 70.0% to 82.7% and nearly doubled the questions participants asked
+
+    **HADREB: A Dataset of Human Appraisals of Robot Emotional Behaviors** (LREC 2022)
+
+    - Collected and analyzed HADREB, a dataset of over 1,000 robot emotional behaviors described and rated by 32 participants on the Misty II and Cozmo robots
+    - Showed a zero-shot language model predicts perceived emotion from the descriptions with up to 79.3% accuracy
+  location: Boise, ID, USA
+
+- title: "Department of Computer Science, Texas State University"
+  role: "Undergraduate Researcher, Intelligent Security Group"
+  start: June 2020
+  end: August 2020
+  description: |
+    Supervised by Dr. Mina Guirguis through an NSF Research Experiences for Undergraduates (REU) site in Smart & Connected Communities.
+
+    - Designed and built a game and reward system to secure a simulated water tank using game theory
+    - Simulated and secured a water tank with check blocks acting as both an intrusion detection and prevention system
+    - Prepared presentations and a report on research findings for REU participants and organizers
+  location: San Marcos, TX, USA

@@ -21,7 +21,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 # 🔥 News
 - *2026.07*: &nbsp;🎉 Presented **[SafetyALFRED](https://aclanthology.org/2026.findings-acl.1852/)** at [ACL 2026](https://2026.aclweb.org/) (Findings) in San Diego.
 - *2026.07*: &nbsp;🎉 **[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/pdf?id=51914Feknq)** appeared at **ICML 2026** in Seoul.
-- *Spring 2026*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
+- *2026.02*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
 - *2026.01*: &nbsp;🎓 Passed my preliminary exam and became a **Ph.D. candidate**.
 - *2025.08*: &nbsp;📄 **[rrSDS 2.0](https://aclanthology.org/2025.sigdial-1.51/)** appeared at **SIGdial 2025** in Avignon.
 - *2025.05*: &nbsp;🎓 Received my M.S. in Computer Science and Engineering from the University of Michigan.

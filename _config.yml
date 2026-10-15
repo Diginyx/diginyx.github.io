@@ -80,6 +80,7 @@ exclude:
   - .sass-cache
   - .github
   - README.md
+  - classic
   - vendor
   - CHANGELOG
   - Capfile
