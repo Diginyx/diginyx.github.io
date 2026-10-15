@@ -35,7 +35,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Findings</div><img src='images/papers/SafetyALFRED.png' alt="SafetyALFRED" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Findings</div><img class='clickable-image' src='images/papers/SafetyALFRED.png' alt="SafetyALFRED" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SafetyALFRED: Evaluating Safety-Conscious Planning of Multimodal Large Language Models](https://aclanthology.org/2026.findings-acl.1852/)
@@ -47,7 +47,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/papers/MechanisticEmergenceOfSymbolGrounding.png' alt="Mechanistic Emergence of Symbol Grounding" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img class='clickable-image' src='images/papers/MechanisticEmergenceOfSymbolGrounding.png' alt="Mechanistic Emergence of Symbol Grounding" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/forum?id=51914Feknq)
@@ -58,7 +58,7 @@ Shuyu Wu, Ziqiao Ma, Xiaoxi Luo, Yidong Huang, **Josue Torres-Fonseca**, Freda S
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGdial 2025</div><img src='images/papers/rrSDS2.0.png' alt="rrSDS 2.0" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGdial 2025</div><img class='clickable-image' src='images/papers/rrSDS2.0.png' alt="rrSDS 2.0" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [rrSDS 2.0: Incremental, Modular, Distributed, Multimodal Spoken Dialogue with Robotic Platforms](https://aclanthology.org/2025.sigdial-1.51/)
@@ -69,7 +69,7 @@ Anna Manaseryan, Porter Rigby, Brooke Matthews, Catherine Henry, **Josue Torres-
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGdial 2022</div><img src='images/papers/ObjPermSDS.png' alt="Object permanence spoken dialogue system" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGdial 2022</div><img class='clickable-image' src='images/papers/ObjPermSDS.png' alt="Object permanence spoken dialogue system" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Symbol and Communicative Grounding through Object Permanence with a Mobile Robot](https://aclanthology.org/2022.sigdial-1.14/)
@@ -81,7 +81,7 @@ Anna Manaseryan, Porter Rigby, Brooke Matthews, Catherine Henry, **Josue Torres-
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LREC 2022</div><img src='images/papers/HADREB.png' alt="HADREB" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LREC 2022</div><img class='clickable-image' src='images/papers/HADREB.png' alt="HADREB" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HADREB: Human Appraisals and (English) Descriptions of Robot Emotional Behaviors](https://aclanthology.org/2022.lrec-1.617/)
@@ -92,6 +92,12 @@ Anna Manaseryan, Porter Rigby, Brooke Matthews, Catherine Henry, **Josue Torres-
 - A dataset of over 1,000 robot emotional behaviors on the Misty II and Cozmo robots, described and rated by 32 participants.
 </div>
 </div>
+
+
+# 📖 Education
+- *2023.08 – 2028.05 (expected)*, **Ph.D. in Computer Science and Engineering**, University of Michigan, Ann Arbor. GPA: 4.0. Advisor: Dr. Joyce Chai.
+- *2023.08 – 2025.05*, **M.S. in Computer Science and Engineering**, University of Michigan, Ann Arbor. GPA: 4.0. Advisor: Dr. Joyce Chai.
+- *2018.08 – 2023.05*, **B.S. in Computer Science, Minor in Applied Mathematics**, Boise State University. GPA: 3.889, Magna Cum Laude, Dean's List. Advisor: Dr. Casey Kennington.
 
 
 # 💻 Research Experience
@@ -151,13 +157,7 @@ Supervised by Dr. Mina Guirguis · NSF Research Experiences for Undergraduates (
 - Applied Agile and Scrum methodologies; gained full-stack experience with JavaScript, React/Redux, C#, .NET, SQL, and Git
 
 
-# 📖 Education
-- *2023.08 – 2028.05 (expected)*, **Ph.D. in Computer Science and Engineering**, University of Michigan, Ann Arbor. GPA: 4.0. Advisor: Dr. Joyce Chai.
-- *2023.08 – 2025.05*, **M.S. in Computer Science and Engineering**, University of Michigan, Ann Arbor. GPA: 4.0. Advisor: Dr. Joyce Chai.
-- *2018.08 – 2023.05*, **B.S. in Computer Science, Minor in Applied Mathematics**, Boise State University. GPA: 3.889, Magna Cum Laude, Dean's List. Advisor: Dr. Casey Kennington.
-
-
-# 💬 Talks & Presentations
+# 💬 Presentations
 - *2026.07*, **SafetyALFRED: Evaluating Safety-Conscious Planning of Multimodal Large Language Models**, Poster, ACL 2026, San Diego, CA &nbsp;\| [\[poster\]](assets/pdf/SafetyALFREDPoster.pdf)
 - *2022.09*, **Symbol and Communicative Grounding through Object Permanence with a Mobile Robot**, Conference Presentation and Poster, SIGdial 2022, Edinburgh, Scotland &nbsp;\| [\[paper\]](https://aclanthology.org/2022.sigdial-1.14/) [\[video\]](https://youtu.be/xxulenUa754) [\[slides\]](assets/pdf/Sigdial2022Presentation.pdf) [\[poster\]](assets/pdf/YRRSDS2022Poster.pdf)
 - *2022.08*, **Interpretable ML Model Providing Neuron Annotations Using No Data**, Video Presentation and Poster, MIT Summer Research Program, Cambridge, MA &nbsp;\| [\[video\]](https://www.youtube.com/watch?v=NRAkEtAYd7I&list=PLZdlHbxyftd8e8fYLiUwvLYztMGoIjBIr&index=6) [\[poster\]](assets/pdf/MSRPPoster.pdf)

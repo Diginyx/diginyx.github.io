@@ -1,0 +1,42 @@
+<!-- Click-to-enlarge for publication images: any <img class="clickable-image"> opens in this overlay. -->
+<div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button type="button" class="image-modal__close" aria-label="Close">&times;</button>
+  <img class="image-modal__img" src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var modal = document.getElementById('image-modal');
+    var modalImg = modal.querySelector('.image-modal__img');
+    var lastFocus = null;
+
+    function open(img) {
+      lastFocus = img;
+      modalImg.src = img.currentSrc || img.src;
+      modalImg.alt = img.alt || '';
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      modal.querySelector('.image-modal__close').focus();
+    }
+    function close() {
+      modal.hidden = true;
+      modalImg.src = '';
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+    }
+
+    document.querySelectorAll('.clickable-image').forEach(function (img) {
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.addEventListener('click', function () { open(img); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); }
+      });
+    });
+    // Clicking anywhere (backdrop, image, or the X) closes it, as on the previous site
+    modal.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modal.hidden) close();
+    });
+  })();
+</script>

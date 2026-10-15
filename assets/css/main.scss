@@ -118,3 +118,54 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+// Top nav: use the full window width and readable text, so every section fits
+// without the overflow (hamburger) menu on laptop-sized screens
+.masthead__inner-wrap {
+    max-width: none !important;
+    padding: .5em 1.5em;
+}
+.greedy-nav a {
+    margin: 0 .45rem;
+}
+.masthead__menu-item {
+    font-size: 1.15em;
+}
+
+// Click-to-enlarge publication images (see _includes/image-modal.html)
+.clickable-image {
+    cursor: zoom-in;
+    transition: transform .15s ease;
+    &:hover { transform: scale(1.03); }
+}
+.image-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, .85);
+    cursor: zoom-out;
+    &[hidden] { display: none; }
+}
+.image-modal__img {
+    max-width: 100%;
+    max-height: 90vh;
+    background: #fff;
+    border-radius: 4px;
+}
+.image-modal__close {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    padding: .25rem .5rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    text-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    cursor: pointer;
+}
