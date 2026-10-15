@@ -20,7 +20,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 # 🔥 News
 - *2026.07*: &nbsp;🎉 Presented **[SafetyALFRED](https://aclanthology.org/2026.findings-acl.1852/)** at [ACL 2026](https://2026.aclweb.org/) (Findings) in San Diego.
-- *2026.07*: &nbsp;🎉 **[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/forum?id=51914Feknq)** appeared at **ICML 2026** in Seoul.
+- *2026.07*: &nbsp;🎉 **[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/pdf?id=51914Feknq)** appeared at **ICML 2026** in Seoul.
 - *2026.04*: &nbsp;📄 Preprint of **SafetyALFRED** released on [arXiv](https://arxiv.org/abs/2604.19638), with [code](https://github.com/sled-group/SafetyALFRED) and [dataset](https://huggingface.co/datasets/Diginyx/SafetyALFRED/tree/main).
 - *2026*: &nbsp;🏆 Received the **Gemini Academic Program Award**.
 - *2026.01*: &nbsp;🎓 Passed my preliminary exam and became a **Ph.D. candidate**.
@@ -42,7 +42,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 **Josue Torres-Fonseca**, Naihao Deng, Yinpei Dai, Shane Storks, Yichi Zhang, Rada Mihalcea, Casey Kennington, Joyce Chai
 
-[**Paper**](https://aclanthology.org/2026.findings-acl.1852/) [**arXiv**](https://arxiv.org/abs/2604.19638) [**Code**](https://github.com/sled-group/SafetyALFRED) [**Dataset**](https://huggingface.co/datasets/Diginyx/SafetyALFRED/tree/main) [**Poster**](assets/pdf/SafetyALFREDPoster.pdf)
+[**Paper**](https://aclanthology.org/2026.findings-acl.1852/) [**Code**](https://github.com/sled-group/SafetyALFRED) [**Dataset**](https://huggingface.co/datasets/Diginyx/SafetyALFRED/tree/main) [**Poster**](assets/pdf/SafetyALFREDPoster.pdf)
 - A benchmark for whether multimodal LLM agents recognize and mitigate kitchen hazards while completing household tasks in AI2-THOR. Models recognize hazards up to 92% of the time but fix them less than 60% of the time; a decoupled multi-agent framework closes much of the gap.
 </div>
 </div>
@@ -50,11 +50,11 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img class='clickable-image' src='images/papers/MechanisticEmergenceOfSymbolGrounding.png' alt="Mechanistic Emergence of Symbol Grounding" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/forum?id=51914Feknq)
+[The Mechanistic Emergence of Symbol Grounding in Language Models](https://openreview.net/pdf?id=51914Feknq)
 
 Shuyu Wu, Ziqiao Ma, Xiaoxi Luo, Yidong Huang, **Josue Torres-Fonseca**, Freda Shi, Joyce Chai
 
-[**Paper**](https://openreview.net/forum?id=51914Feknq) [**arXiv**](https://arxiv.org/abs/2510.13796)
+[**Paper**](https://openreview.net/pdf?id=51914Feknq)
 </div>
 </div>
 
