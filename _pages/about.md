@@ -121,7 +121,7 @@ Advised by Dr. Joyce Chai
 
 **Undergraduate Researcher**, SLIM Lab, Boise State University &nbsp;·&nbsp; *Aug 2021 – Aug 2023*<br>
 Advised by Dr. Casey Kennington
-- **Object permanence for spoken dialogue** *(SIGdial 2022)*: Gave a Cozmo robot memory of the objects it has seen and where, raising its accuracy answering questions about them from 70.0% to 82.7%.
+- **Object permanence for grounded language learning** *(SIGdial 2022)*: Studied how object permanence helps a robot learn language, giving a Cozmo robot memory of the objects it has seen and where. In a 24-participant study, this raised its accuracy answering questions about learned objects from 70.0% to 82.7%.
 - **HADREB** *(LREC 2022)*: Built a dataset of over 1,000 robot emotional behaviors described and rated by 32 participants.
 
 **Undergraduate Researcher**, Language & Intelligence Group, MIT &nbsp;·&nbsp; *May 2022 – Nov 2022*<br>
