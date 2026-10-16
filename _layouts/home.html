@@ -40,6 +40,10 @@ layout: default
   .intro-body li { margin-bottom: .6rem; }
   /* Make the tab bar read as tabs: hover state on inactive tabs */
   #test-list .nav-link:not(.active):hover { background-color: rgba(255,255,255,.55); border-color: transparent; }
+  .tab-content .mentoring-list { padding-left: 1.5rem; margin-bottom: 1rem; }
+  .tab-content .mentoring-list li { margin-bottom: .2rem; }
+  .tab-content #mentoring a { color: #9B3536; }
+  .tab-content #mentoring a:hover { color: #5C1A1B; text-decoration: underline; }
   .tab-content .job-role { font-size: 1.1rem; font-weight: 700; color: #5C1A1B; margin: .2rem 0 .6rem; }
 </style>
 
@@ -257,6 +261,16 @@ layout: default
                     </div>
                   </div>
                 {% endfor %}
+              </div>
+            {% elsif section.name == "Mentoring" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p class="tab-intro">Students I've collaborated with and advised on research.</p>
+                <ul class="mentoring-list">
+                  {% for student in site.data.mentoring %}
+                    <li>{% if student.url %}<a href="{{ student.url }}" target="_blank">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}: {{ student.level }}, {{ student.school }} ({{ student.years }})</li>
+                  {% endfor %}
+                </ul>
+                <p><strong>If you're a University of Michigan student interested in my research and would like to work with me, please <a href="mailto:{{ site.email }}">send me an email</a>.</strong></p>
               </div>
             {% elsif section.name == "Awards" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
