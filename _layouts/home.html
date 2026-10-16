@@ -38,6 +38,8 @@ layout: default
   .intro-body a:hover { color: #5C1A1B; text-decoration: underline; }
   .intro-body ul { padding-left: 1.25rem; }
   .intro-body li { margin-bottom: .6rem; }
+  /* Make the tab bar read as tabs: hover state on inactive tabs */
+  #test-list .nav-link:not(.active):hover { background-color: rgba(255,255,255,.55); border-color: transparent; }
   .tab-content .job-role { font-size: 1.1rem; font-weight: 700; color: #5C1A1B; margin: .2rem 0 .6rem; }
 </style>
 
@@ -98,11 +100,11 @@ layout: default
       {% for section in site.data.sections %}
         {% if section.first %}
           <li class="nav-item">
-            <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
+            <a class="nav-link shadow-none active" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
           </li>
         {% else %}
           <li class="nav-item">
-              <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
+              <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
           </li>
         {% endif %}
       {% endfor %}
