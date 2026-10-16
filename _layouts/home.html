@@ -33,6 +33,11 @@ layout: default
   .tab-content .awards-list { margin-top: 0.5rem; padding-left: 1.2rem; }
   .tab-content .awards-list li { margin-bottom: 0.4rem; }
   .tab-content .tab-intro { font-style: italic; color: #555; margin-bottom: 1rem; }
+  /* Intro: colored links like the reference homepage, airy research-direction bullets */
+  .intro-body a { color: #9B3536; }
+  .intro-body a:hover { color: #5C1A1B; text-decoration: underline; }
+  .intro-body ul { padding-left: 1.25rem; }
+  .intro-body li { margin-bottom: .6rem; }
   .tab-content .job-role { font-size: 1.1rem; font-weight: 700; color: #5C1A1B; margin: .2rem 0 .6rem; }
 </style>
 
@@ -71,7 +76,7 @@ layout: default
       {% else %}
       <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
       {% endif %}
-        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
+        <div class="intro-body" style="color:{{theme.education-font-color}};">{{ content | markdownify }}</div>
         {% if site.home_option == "education" %}
           {% include education.html %}
         {% endif %}
