@@ -33,6 +33,7 @@ layout: default
   .tab-content .awards-list { margin-top: 0.5rem; padding-left: 1.2rem; }
   .tab-content .awards-list li { margin-bottom: 0.4rem; }
   .tab-content .tab-intro { font-style: italic; color: #555; margin-bottom: 1rem; }
+  .tab-content .job-role { font-size: 1.1rem; font-weight: 700; color: #5C1A1B; margin: .2rem 0 .6rem; }
 </style>
 
 <!--  HELP TIPS SECTION  -->
@@ -174,7 +175,7 @@ layout: default
                         </div>
                         {% endif %}
                         <div class="d-flex justify-content-between">
-                          <h5 class="mb-1">{{ entry.Program }}</h5>
+                          <h5 class="mb-1 job-role">{{ entry.Program }}</h5>
                           <small>{{ entry.StartDate }} – {{ entry.EndDate }}</small>
                         </div>
                         <p><i>{{ entry.School }}</i></p>
@@ -224,7 +225,7 @@ layout: default
                           <small>{{ job.start }} - {{ job.end }}</small>
                         </div>
                       </div>
-                      <p><i>{{ job.role }}</i></p>
+                      <p class="job-role">{{ job.role }}</p>
                       <div class="mb-1 job-description">{{ job.description | markdownify }}</div>
                       <small>{{ job.location }}</small>
                     </div>
@@ -243,7 +244,7 @@ layout: default
                           <small>{{ job.start }} - {{ job.end }}</small>
                         </div>
                       </div>
-                      <p><i>{{ job.role }}</i></p>
+                      <p class="job-role">{{ job.role }}</p>
                       <div class="mb-1 job-description">{{ job.description | markdownify }}</div>
                       <small>{{ job.location }}</small>
                     </div>
