@@ -41,6 +41,25 @@ layout: default
   /* Make the tab bar read as tabs: hover state on inactive tabs */
   #test-list .nav-link:not(.active):hover { background-color: rgba(255,255,255,.55); border-color: transparent; }
   .equal-contrib { font-size: .9rem; color: #555; margin: -.5rem 0 1rem; }
+  /* Links under the profile photo: text buttons for CV/Resume, icons for the rest */
+  .profile-links { margin: 1rem 0 1.25rem; text-align: center; }
+  .profile-docs { display: flex; justify-content: center; gap: .6rem; margin-bottom: .75rem; }
+  .profile-doc-btn {
+    display: inline-block;
+    min-width: 6.5rem;
+    padding: .45rem 1rem;
+    border: 2px solid #5C1A1B;
+    border-radius: .3rem;
+    background-color: #5C1A1B;
+    color: #fff !important;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-decoration: none !important;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  .profile-doc-btn:hover { background-color: #fff; color: #5C1A1B !important; }
+  .profile-links .nav-social-icons { gap: .55rem; }
+  .profile-links .nav-social-icons a { color: #5C1A1B; }
   .tab-content .mentoring-list { padding-left: 1.5rem; margin-bottom: 1rem; }
   .tab-content .mentoring-list li { margin-bottom: .2rem; }
   .tab-content #mentoring a { color: #9B3536; }
@@ -77,6 +96,8 @@ layout: default
       {% else %}
         <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
       {% endif %}
+      <div style="clear: both;"></div>
+      {% include profile-links.html %}
     </div>
     <!-- EDUCATION SECTION -->
     <div class="col-md-8">

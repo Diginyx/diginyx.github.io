@@ -1,0 +1,9 @@
+<!-- CV / Resume buttons and social icons shown under the profile photo -->
+{%- assign v = site.time | date: '%s' -%}
+<div class="profile-links {% if site.animate %}animate__animated animate__fadeInLeft{% endif %}">
+  <div class="profile-docs">
+    <a class="profile-doc-btn" href="/assets/pdf/vitae.pdf?v={{ v }}" target="_blank" rel="noopener">CV</a>
+    <a class="profile-doc-btn" href="/assets/pdf/resume.pdf?v={{ v }}" target="_blank" rel="noopener">Resume</a>
+  </div>
+  <div class="profile-social">{% include social.html %}</div>
+</div>
