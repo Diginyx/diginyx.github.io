@@ -1,6 +1,7 @@
-# Newest first. Optional: `url:` links the name; `now:` notes where the student went next.
+# Newest first. Optional: `url:` links the name, `pub:` lists a resulting paper,
+# `next:` shows where the student went next (rendered with an arrow).
 - name: Avi Bhattacharya
   level: Undergraduate
   school: University of Michigan
-  years: 2026 - Present
-  now: Software / ML Engineer at ServiceNow
+  years: "2026"
+  next: Software / ML Engineer, ServiceNow

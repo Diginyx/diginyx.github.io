@@ -43,6 +43,7 @@ layout: default
   .tab-content .mentoring-list { padding-left: 1.5rem; margin-bottom: 1rem; }
   .tab-content .mentoring-list li { margin-bottom: .2rem; }
   .tab-content #mentoring a { color: #9B3536; }
+  .tab-content .mentee-detail { color: #555; font-size: .95em; margin-left: .25rem; }
   .tab-content #mentoring a:hover { color: #5C1A1B; text-decoration: underline; }
   .tab-content .job-role { font-size: 1.1rem; font-weight: 700; color: #5C1A1B; margin: .2rem 0 .6rem; }
 </style>
@@ -267,7 +268,10 @@ layout: default
                 <p class="tab-intro">Students I've collaborated with and advised on research.</p>
                 <ul class="mentoring-list">
                   {% for student in site.data.mentoring %}
-                    <li>{% if student.url %}<a href="{{ student.url }}" target="_blank">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}: {{ student.level }}, {{ student.school }} ({{ student.years }}){% if student.now %}; now {{ student.now }}{% endif %}</li>
+                    <li>{% if student.url %}<a href="{{ student.url }}" target="_blank">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}: {{ student.level }}, {{ student.school }} ({{ student.years }})
+                      {% if student.pub %}<div class="mentee-detail">{{ student.pub | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+                      {% if student.next %}<div class="mentee-detail">&rarr; {{ student.next }}</div>{% endif %}
+                    </li>
                   {% endfor %}
                 </ul>
                 <p><strong>If you're a University of Michigan student interested in my research and would like to work with me, please <a href="mailto:{{ site.email }}">send me an email</a>.</strong></p>
