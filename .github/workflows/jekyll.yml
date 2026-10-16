@@ -33,8 +33,8 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      # Previous (Dumbarton) design, served at /classic/. It has its own Gemfile
-      # (jekyll-scholar), so it is built after the main site, into _site/classic.
+      # Alternate (AcadHomepage) design, served at /classic/. It has its own
+      # Gemfile, so it is built after the main site, into _site/classic.
       - name: Build classic site
         working-directory: classic
         run: |

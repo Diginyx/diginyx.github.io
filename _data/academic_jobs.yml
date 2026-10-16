@@ -1,0 +1,34 @@
+- role: Ph.D. Candidate
+  org: SLED Lab, University of Michigan
+  start: Aug 2023
+  end: Present
+  advisor: Advised by [Dr. Joyce Chai](https://web.eecs.umich.edu/~chaijy/)
+  description: |
+    - **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: Building SafetyBehavior, an OmniGibson-based benchmark where robots must recognize and mitigate hazards from real injury data ([NEISS](https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data)) while completing BEHAVIOR-1K tasks, evaluating high-level planning (e.g., “wash the dishes”) and low-level control together in hierarchical and unified VLM-VLA systems. Using mechanistic interpretability to trace where the safety signal is lost and how to amplify it.
+    - **ReMI** *(HRI 2027, under review)*: A conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience. Now being extended into a multi-week in-home study.
+    - **SafetyALFRED** *(Findings of ACL 2026)*: A benchmark exposing a gap between recognizing and acting: multimodal LLMs identify kitchen hazards in question answering up to 92% of the time, but fix them less than 60% of the time as embodied agents.
+
+- role: Undergraduate Researcher
+  org: SLIM Lab, Boise State University
+  start: Aug 2021
+  end: Aug 2023
+  advisor: Advised by [Dr. Casey Kennington](https://www.caseyreddkennington.com/)
+  description: |
+    - **Object permanence for grounded language learning** *(SIGdial 2022)*: Studied how object permanence helps a robot learn language, giving a Cozmo robot memory of the objects it has seen and where. In a 24-participant study, this raised its accuracy answering questions about learned objects from 70.0% to 82.7%.
+    - **HADREB** *(LREC 2022)*: Built a dataset of over 1,000 robot emotional behaviors described and rated by 32 participants.
+
+- role: Undergraduate Researcher
+  org: Language & Intelligence Group, MIT
+  start: May 2022
+  end: Nov 2022
+  advisor: Advised by Dr. Jacob Andreas · MIT Summer Research Program
+  description: |
+    - Built an interpretable model that annotates neurons without data.
+
+- role: Undergraduate Researcher
+  org: Intelligent Security Group, Texas State University
+  start: Jun 2020
+  end: Aug 2020
+  advisor: Advised by Dr. Mina Guirguis · NSF REU
+  description: |
+    - Used game theory to secure a simulated water tank.

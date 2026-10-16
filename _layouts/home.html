@@ -1,0 +1,232 @@
+---
+layout: default
+---
+{% assign theme = site.data.themes[site.ui_theme] %}
+
+<style>
+  /* One scrolling page of clearly separated sections (no tabbed boxes) */
+  .home-section { margin-top: 2.75rem; scroll-margin-top: 1rem; }
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #5C1A1B;
+    border-bottom: 2px solid #5C1A1B;
+    padding-bottom: .35rem;
+    margin-bottom: 1.1rem;
+  }
+  .home-section a:not(.btn) { color: #5C1A1B; text-decoration: underline; text-underline-offset: 2px; }
+  .home-section a:not(.btn):hover { color: #7B1E1E; }
+
+  .news-list, .plain-list { list-style: none; padding-left: 0; margin: 0; }
+  .news-list li, .plain-list li { margin-bottom: .55rem; line-height: 1.5; }
+  .news-list li p, .plain-list li p { display: inline; margin: 0; }
+  .item-date { font-style: italic; color: #666; margin-right: .5rem; white-space: nowrap; }
+
+  .cv-entry { margin-bottom: 1.4rem; }
+  .cv-entry-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem; }
+  .cv-entry-head h5 { font-size: 1.08rem; margin: 0; }
+  .cv-entry-sub { color: #555; font-style: italic; margin: .15rem 0 .4rem; }
+  .cv-entry ul { margin-bottom: 0; padding-left: 1.25rem; }
+  .cv-entry li { margin-bottom: .3rem; line-height: 1.5; }
+
+  /* Publications (jekyll-scholar output) */
+  .home-section ul.bibliography, .home-section ol.bibliography { list-style: none !important; padding-left: 0; margin: 0; }
+  .home-section ul.bibliography > li, .home-section ol.bibliography > li { list-style: none !important; margin-bottom: 1.5rem; }
+  .home-section h2.bibliography { font-size: 1.2rem; font-weight: 700; color: #5C1A1B; margin: 1.5rem 0 .75rem; }
+  .home-section .bib-entry { align-items: center; }
+  .home-section .bib-title { font-size: 1.05rem; }
+  .home-section .bib-venue em { color: #555; }
+  .publication-img-wrap { position: relative; width: 200px; flex: 0 0 200px; margin: 6px 0 10px 15px; }
+  .publication-img-wrap .publication-img { display: block; width: 100%; height: auto; box-shadow: 2px 2px 6px rgba(0,0,0,.25); }
+  .pub-badge {
+    position: absolute;
+    top: .4em;
+    left: -.4em;
+    z-index: 1;
+    padding: 0 .7rem;
+    background-color: #00369f;
+    color: #fff;
+    font-size: .78em;
+    line-height: 1.6;
+  }
+  .home-section .btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #5C1A1B;
+    margin: 0 .3rem .3rem 0;
+  }
+  .home-section .btn-light:hover { background-color: #e9ecef; color: #5C1A1B; }
+  .home-section .btn-light ion-icon { color: #5C1A1B; display: inline-block; vertical-align: middle; font-size: 20px; margin: -1px .25rem 0 -4px; }
+  .home-section .btn-light .button-text { display: inline-block; vertical-align: middle; }
+
+  .edu-list .media { margin-bottom: 1rem; }
+  .edu-list img { width: 72px; height: 72px; object-fit: cover; }
+
+  /* Sections fade up as they scroll into view */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.is-visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+  @media (max-width: 767px) {
+    .publication-img-wrap { margin-left: 15px; }
+  }
+</style>
+
+<!-- ABOUT ME SECTION -->
+<div class="card mx-auto border-0" style="position:relative;background-color:{{theme.home-background-color}};">
+  <div class="row">
+    <div class="col-md-4">
+      {% if site.animate %}
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="Josue Torres-Fonseca">
+      {% else %}
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="Josue Torres-Fonseca">
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      <div class="card-body {% if site.animate %}animate__animated animate__fadeInRight{% else %}mt-0{% endif %}" style="color:{{theme.education-font-color}};">
+        {{ content | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-sections">
+
+  <section id="news" class="home-section reveal">
+    <h2 class="section-title">🔥 News</h2>
+    <ul class="news-list">
+      {% for item in site.data.news %}
+        <li><span class="item-date">{{ item.date }}</span>{{ item.text | markdownify }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="publications" class="home-section reveal">
+    <h2 class="section-title">📝 Publications</h2>
+    {% bibliography -f papers %}
+  </section>
+
+  <section id="education" class="home-section reveal">
+    <h2 class="section-title">📖 Education</h2>
+    <ul class="list-unstyled edu-list">
+      {% for entry in site.data.education %}
+        <li class="media">
+          <img src="{{ entry.icon | relative_url }}" class="mr-3 clickable-image" alt="{{ entry.school }} seal">
+          <div class="media-body">
+            <h5 style="font-size: 1.05rem;"><strong>{{ entry.degree }}</strong> in {{ entry.field }}</h5>
+            <div style="font-size: .95rem;">
+              {{ entry.year }}, {{ entry.school }}
+              {% for detail in entry.details %}<br>{{ detail }}{% endfor %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="research" class="home-section reveal">
+    <h2 class="section-title">💻 Research Experience</h2>
+    {% for job in site.data.academic_jobs %}
+      <div class="cv-entry">
+        <div class="cv-entry-head">
+          <h5><strong>{{ job.role }}</strong>, {{ job.org }}</h5>
+          <span class="item-date">{{ job.start }} – {{ job.end }}</span>
+        </div>
+        {% if job.advisor %}<div class="cv-entry-sub">{{ job.advisor | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+        {{ job.description | markdownify }}
+      </div>
+    {% endfor %}
+  </section>
+
+  <section id="industry" class="home-section reveal">
+    <h2 class="section-title">🏢 Industry Experience</h2>
+    {% for job in site.data.industry_jobs %}
+      <div class="cv-entry">
+        <div class="cv-entry-head">
+          <h5><strong>{{ job.role }}</strong>, {{ job.org }}</h5>
+          <span class="item-date">{{ job.start }} – {{ job.end }}</span>
+        </div>
+        {{ job.description | markdownify }}
+      </div>
+    {% endfor %}
+  </section>
+
+  <section id="presentations" class="home-section reveal">
+    <h2 class="section-title">💬 Presentations</h2>
+    <ul class="plain-list">
+      {% assign sorted_talks = site.data.talks | sort: "year" | reverse %}
+      {% for talk in sorted_talks %}
+        <li class="mb-3">
+          <strong>{{ talk.title }}</strong><br>
+          {{ talk.type }}, <em>{{ talk.venue }}</em>{% if talk.location %}, {{ talk.location }}{% endif %} <span class="item-date">· {{ talk.date }}</span>
+          <div class="links mt-1">{% include link-buttons.html entry=talk %}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="awards" class="home-section reveal">
+    <h2 class="section-title">🎖 Honors and Awards</h2>
+    <ul class="plain-list">
+      {% for award in site.data.awards %}
+        <li><span class="item-date">{{ award.date }}</span>{{ award.name }}{% if award.amount %} ({{ award.amount }}){% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="teaching" class="home-section reveal">
+    <h2 class="section-title">🧑‍🏫 Teaching</h2>
+    <ul class="plain-list">
+      {% for entry in site.data.teaching %}
+        <li><span class="item-date">{{ entry.StartDate }} – {{ entry.EndDate }}</span>{{ entry.Program }}, {{ entry.School }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="service" class="home-section reveal">
+    <h2 class="section-title">👔 Service &amp; Leadership</h2>
+    <ul class="plain-list">
+      {% for entry in site.data.service %}
+        <li><span class="item-date">{{ entry.date }}</span>{{ entry.role }}, <strong>{{ entry.org }}</strong></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+</div>
+
+{% include image-modal.html %}
+
+<!-- Convert jekyll-scholar's numbered <ol class="bibliography"> into a non-numbered <ul> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('ol.bibliography').forEach(function (ol) {
+      var ul = document.createElement('ul');
+      ul.className = 'bibliography';
+      while (ol.firstChild) { ul.appendChild(ol.firstChild); }
+      ol.parentNode.replaceChild(ul, ol);
+    });
+  });
+</script>
+
+<!-- Reveal sections on scroll; show everything immediately if unsupported -->
+<script>
+  (function () {
+    var sections = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      sections.forEach(function (s) { s.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    sections.forEach(function (s) { io.observe(s); });
+    // Jumping to a section from the nav should show it right away
+    window.addEventListener('hashchange', function () {
+      var t = document.querySelector(location.hash);
+      if (t) t.classList.add('is-visible');
+    });
+  })();
+</script>

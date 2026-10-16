@@ -3,7 +3,10 @@
 
 <div class="row bib-entry" style="margin-bottom: 1.5rem;">
     {% if entry.preview %}
-      <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="mr-3 publication-img clickable-image" alt="{{entry.title}}">
+      <div class="publication-img-wrap mr-3">
+        {% if entry.badge %}<span class="pub-badge">{{ entry.badge }}</span>{% endif %}
+        <img src="{{ entry.preview | prepend: '/assets/img/papers/' | relative_url }}" class="publication-img clickable-image" alt="{{entry.title}}">
+      </div>
     {% endif %}
     <div id="{{entry.key}}" class="col">
     {% if entry.type == "thesis" %}
@@ -24,7 +27,7 @@
           {%- if forloop.length == 1 -%}
             {{ rendered }}
           {%- elsif forloop.length == 2 -%}
-            {%- if forloop.first -%}{{ rendered }} and {%- else -%}{{ rendered }}{%- endif -%}
+            {%- if forloop.first -%}{{ rendered }} and{{ " " }}{%- else -%}{{ rendered }}{%- endif -%}
           {%- else -%}
             {%- if forloop.last -%}and {{ rendered }}{%- else -%}{{ rendered }},{{ " " }}{%- endif -%}
           {%- endif -%}

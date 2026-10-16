@@ -3,10 +3,6 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from:
-  - /about/
-  - /about.html
-  - /publications.html
 ---
 
 <span class='anchor' id='about-me'></span>
@@ -49,7 +45,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 <a class="pub-btn" href="https://aclanthology.org/2026.findings-acl.1852/" target="_blank"><ion-icon name="book-outline"></ion-icon> Publication</a>
 <a class="pub-btn" href="https://github.com/sled-group/SafetyALFRED" target="_blank"><ion-icon name="code-slash-outline"></ion-icon> Code</a>
 <a class="pub-btn" href="https://huggingface.co/datasets/Diginyx/SafetyALFRED/tree/main" target="_blank"><ion-icon name="server-outline"></ion-icon> Dataset</a>
-<a class="pub-btn" href="assets/pdf/SafetyALFREDPoster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
+<a class="pub-btn" href="/assets/pdf/SafetyALFREDPoster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
 </div>
 </div>
 </div>
@@ -85,8 +81,8 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 <div class="pub-links">
 <a class="pub-btn" href="https://aclanthology.org/2022.sigdial-1.14/" target="_blank"><ion-icon name="book-outline"></ion-icon> Publication</a>
 <a class="pub-btn" href="https://youtu.be/xxulenUa754" target="_blank"><ion-icon name="videocam-outline"></ion-icon> Video</a>
-<a class="pub-btn" href="assets/pdf/Sigdial2022Presentation.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a>
-<a class="pub-btn" href="assets/pdf/YRRSDS2022Poster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
+<a class="pub-btn" href="/assets/pdf/Sigdial2022Presentation.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a>
+<a class="pub-btn" href="/assets/pdf/YRRSDS2022Poster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
 </div>
 </div>
 </div>
@@ -99,7 +95,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 <div class="pub-links">
 <a class="pub-btn" href="https://aclanthology.org/2022.lrec-1.617/" target="_blank"><ion-icon name="book-outline"></ion-icon> Publication</a>
 <a class="pub-btn" href="https://github.com/bsu-slim/hadreb" target="_blank"><ion-icon name="code-slash-outline"></ion-icon> Code</a>
-<a class="pub-btn" href="assets/pdf/LRECTalk.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a>
+<a class="pub-btn" href="/assets/pdf/LRECTalk.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a>
 </div>
 </div>
 </div>
@@ -140,10 +136,10 @@ Advised by Dr. Mina Guirguis · NSF REU
 
 
 # 💬 Presentations
-- *2026.07*, **SafetyALFRED**, poster at ACL 2026, San Diego <a class="pub-btn pub-btn--inline" href="assets/pdf/SafetyALFREDPoster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
-- *2022.09*, **Symbol and Communicative Grounding through Object Permanence**, talk and poster at SIGdial 2022, Edinburgh <a class="pub-btn pub-btn--inline" href="https://youtu.be/xxulenUa754" target="_blank"><ion-icon name="videocam-outline"></ion-icon> Video</a> <a class="pub-btn pub-btn--inline" href="assets/pdf/Sigdial2022Presentation.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a> <a class="pub-btn pub-btn--inline" href="assets/pdf/YRRSDS2022Poster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
-- *2022.08*, **Interpretable Neuron Annotations Using No Data**, video and poster at the MIT Summer Research Program <a class="pub-btn pub-btn--inline" href="https://www.youtube.com/watch?v=NRAkEtAYd7I&list=PLZdlHbxyftd8e8fYLiUwvLYztMGoIjBIr&index=6" target="_blank"><ion-icon name="videocam-outline"></ion-icon> Video</a> <a class="pub-btn pub-btn--inline" href="assets/pdf/MSRPPoster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
-- *2022.06*, **HADREB**, video presentation at LREC 2022, Marseille <a class="pub-btn pub-btn--inline" href="assets/pdf/LRECTalk.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a>
+- *2026.07*, **SafetyALFRED**, poster at ACL 2026, San Diego <a class="pub-btn pub-btn--inline" href="/assets/pdf/SafetyALFREDPoster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
+- *2022.09*, **Symbol and Communicative Grounding through Object Permanence**, talk and poster at SIGdial 2022, Edinburgh <a class="pub-btn pub-btn--inline" href="https://youtu.be/xxulenUa754" target="_blank"><ion-icon name="videocam-outline"></ion-icon> Video</a> <a class="pub-btn pub-btn--inline" href="/assets/pdf/Sigdial2022Presentation.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a> <a class="pub-btn pub-btn--inline" href="/assets/pdf/YRRSDS2022Poster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
+- *2022.08*, **Interpretable Neuron Annotations Using No Data**, video and poster at the MIT Summer Research Program <a class="pub-btn pub-btn--inline" href="https://www.youtube.com/watch?v=NRAkEtAYd7I&list=PLZdlHbxyftd8e8fYLiUwvLYztMGoIjBIr&index=6" target="_blank"><ion-icon name="videocam-outline"></ion-icon> Video</a> <a class="pub-btn pub-btn--inline" href="/assets/pdf/MSRPPoster.pdf" target="_blank"><ion-icon name="easel-outline"></ion-icon> Poster</a>
+- *2022.06*, **HADREB**, video presentation at LREC 2022, Marseille <a class="pub-btn pub-btn--inline" href="/assets/pdf/LRECTalk.pdf" target="_blank"><ion-icon name="albums-outline"></ion-icon> Slides</a>
 
 
 # 🎖 Honors and Awards
