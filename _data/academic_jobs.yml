@@ -6,16 +6,6 @@
   description: |
     Supervised by Dr. Joyce Chai.
 
-    **Tracing the Safety Signal in VLM → VLA Robot Pipelines** (ongoing)
-
-    - Building SafetyBehavior, an OmniGibson-based benchmark where robots must recognize and mitigate hazards drawn from real injury data ([NEISS](https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data)) while completing BEHAVIOR-1K tasks
-    - Evaluating high-level planning (e.g., "wash the dishes") and the low-level control that carries it out within the same task, for both hierarchical and unified VLM-VLA systems
-    - Using mechanistic interpretability to trace where the safety signal lives and how it travels from planner to action, and developing methods to amplify it
-
-    **ReMI Longitudinal: Building Resilience through Multi-Week Robot Interaction** (ongoing)
-
-    - Extending ReMI into a 2-week in-home deployment that aims to strengthen resilience in individuals living with cognitive decline through resilience education, guided discussion, and mindfulness practice
-
     **ReMI: A Conversational Robot to Elicit Resilience Reflection** (under review at HRI 2027, co-first author)
 
     - Designed and built an embodied conversational robot that encourages individuals living with cognitive decline to reflect on their resilience, co-designed with 10 dementia experts and 14 people with cognitive impairment

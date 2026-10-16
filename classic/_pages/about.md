@@ -9,7 +9,7 @@ author_profile: true
 
 Hi! I am a PhD candidate in Computer Science and Engineering at the University of Michigan, where I work with [Dr. Joyce Chai](https://web.eecs.umich.edu/~chaijy/) as a member of the [Situated Language and Embodied Dialogue (SLED) Lab](https://sled.eecs.umich.edu/). My research focuses on language understanding, cognitive development, and embodied agents, specifically, how robots can take advantage of their ability to interact with the world around them to learn language during spoken interaction with others.
 
-My recent work evaluates whether multimodal LLM agents can recognize and mitigate safety hazards while completing household tasks ([SafetyALFRED](https://aclanthology.org/2026.findings-acl.1852/), Findings of ACL 2026), and builds conversational robots that help people living with cognitive decline reflect on their resilience (under review at HRI 2027). I am currently studying how safety information travels from vision-language planners to vision-language-action controllers, using mechanistic interpretability to find where the safety signal lives and how to amplify it.
+My recent work evaluates whether multimodal LLM agents can recognize and mitigate safety hazards while completing household tasks ([SafetyALFRED](https://aclanthology.org/2026.findings-acl.1852/), Findings of ACL 2026), and builds conversational robots that help people living with cognitive decline reflect on their resilience (under review at HRI 2027).
 
 Prior to joining the University of Michigan, I graduated from Boise State University with a B.S. in Computer Science (Magna Cum Laude, Minor in Applied Mathematics), where during my last two years I performed research advised by [Dr. Casey Kennington](https://www.caseyreddkennington.com/) as a member of the Speech Language and Interactive Machines (SLIM) Lab. I am supported by the NSF Graduate Research Fellowship and the Gemini Academic Program.
 
@@ -111,8 +111,7 @@ Prior to joining the University of Michigan, I graduated from Boise State Univer
 
 **Ph.D. Candidate**, SLED Lab, University of Michigan &nbsp;·&nbsp; *Aug 2023 – Present*<br>
 Advised by Dr. Joyce Chai
-- **Safety signals in VLM → VLA robot pipelines** *(ongoing)*: Building SafetyBehavior, an OmniGibson-based benchmark where robots must recognize and mitigate hazards from real injury data ([NEISS](https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data)) while completing BEHAVIOR-1K tasks, evaluating high-level planning (e.g., “wash the dishes”) and low-level control together in hierarchical and unified VLM-VLA systems. Using mechanistic interpretability to trace where the safety signal is lost and how to amplify it.
-- **ReMI** *(HRI 2027, under review)*: A conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience. Now being extended into a multi-week in-home study.
+- **ReMI** *(HRI 2027, under review)*: A conversational robot, co-designed with dementia experts, that helps people living with cognitive decline reflect on their resilience.
 - **SafetyALFRED** *(Findings of ACL 2026)*: A benchmark exposing a gap between recognizing and acting: multimodal LLMs identify kitchen hazards in question answering up to 92% of the time, but fix them less than 60% of the time as embodied agents.
 
 **Undergraduate Researcher**, SLIM Lab, Boise State University &nbsp;·&nbsp; *Aug 2021 – Aug 2023*<br>
