@@ -1,7 +1,20 @@
-# Newest first. Optional: `url:` links the name, `pub:` lists a resulting paper,
-# `next:` shows where the student went next (rendered with an arrow).
-- name: Avi Bhattacharya
-  level: Undergraduate
-  school: University of Michigan
-  years: "2026"
-  next: Software / ML Engineer, ServiceNow
+# Newest first within each list. Optional fields: `url:` links the name,
+# `pub:` lists a resulting paper, `next:` shows where a past student went next.
+current:
+  - name: Yuzhang Mei
+    url: https://www.linkedin.com/in/yuzhang-mei-6bb554383
+    level: Undergraduate
+    school: University of Michigan
+    years: 2026 - Present
+
+  - name: Jun Wang
+    level: Master's
+    school: University of Michigan
+    years: 2026 - Present
+
+past:
+  - name: Avi Bhattacharya
+    level: Undergraduate
+    school: University of Michigan
+    years: "2026"
+    next: Software / ML Engineer, ServiceNow
