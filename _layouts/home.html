@@ -58,8 +58,22 @@ layout: default
     transition: background-color .15s ease, color .15s ease;
   }
   .profile-doc-btn:hover { background-color: #fff; color: #5C1A1B !important; }
-  .profile-links .nav-social-icons { gap: .9rem; flex-wrap: wrap; justify-content: center; }
-  .profile-links .nav-social-icons a { color: #5C1A1B; font-size: 1.55rem; }
+  .profile-social-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem; }
+  .profile-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 2px solid #5C1A1B;
+    border-radius: .3rem;
+    background-color: #5C1A1B;
+    color: #fff !important;
+    font-size: 1.15rem;
+    text-decoration: none !important;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  .profile-icon-btn:hover { background-color: #fff; color: #5C1A1B !important; }
   .tab-content .mentoring-list { padding-left: 1.5rem; margin-bottom: 1rem; }
   .tab-content .mentoring-list li { margin-bottom: .2rem; }
   .tab-content #mentoring a { color: #9B3536; }
