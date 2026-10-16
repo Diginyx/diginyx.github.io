@@ -14,4 +14,4 @@ Hello! I'm a Ph.D. candidate in [Computer Science and Engineering at the Univers
 
 - **Conversational robots for well-being.** How can embodied conversational agents help people living with cognitive decline reflect on and strengthen their resilience, and how do people perceive a robot's behavior? (see [LREC 2022](https://aclanthology.org/2022.lrec-1.617/), HRI 2027 under review; ongoing: a multi-week in-home study combining resilience education, guided discussion, and mindfulness)
 
-My work is supported by the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/) and the Gemini Academic Program, and I've served as treasurer of Michigan's Computer Science and Engineering Graduate Students.
+My work is supported by the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). I enjoy working with and mentoring students, so if you're interested in any of these directions, feel free to reach out!
