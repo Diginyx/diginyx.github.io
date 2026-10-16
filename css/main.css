@@ -708,22 +708,21 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
-/* Social icon buttons (under the profile photo and in the footer): maroon,
-   inverting to white with a maroon border on hover, like the CV/Resume buttons */
-.profile-social-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: .45rem; }
+/* Social icons (under the profile photo and in the footer): the original black
+   square icons, inverting on hover (black tile, white icon) like the CV/Resume buttons */
+.profile-social-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem; }
 .profile-icon-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 2px solid #5C1A1B;
+  padding: .2rem;
   border-radius: .3rem;
-  background-color: #5C1A1B;
-  color: #fff !important;
-  font-size: 1.15rem;
+  color: black !important;
+  font-size: 1.85rem;
+  line-height: 1;
   text-decoration: none !important;
   transition: background-color .15s ease, color .15s ease;
 }
-.profile-icon-btn:hover { background-color: #fff; color: #5C1A1B !important; }
-.footer-social-btns .profile-social-btns { justify-content: flex-end; }
+.profile-icon-btn:hover { background-color: black; color: #fff !important; }
+.footer-social-btns .profile-social-btns { justify-content: flex-end; gap: .15rem; }
+.footer-social-btns .profile-icon-btn { font-size: 1.45rem; padding: .15rem; }
