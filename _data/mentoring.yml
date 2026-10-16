@@ -1,5 +1,6 @@
-# Newest first. Add `url:` to link a student's name.
+# Newest first. Optional: `url:` links the name; `now:` notes where the student went next.
 - name: Avi Bhattacharya
   level: Undergraduate
   school: University of Michigan
   years: 2026 - Present
+  now: Software / ML Engineer at ServiceNow

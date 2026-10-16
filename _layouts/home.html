@@ -267,7 +267,7 @@ layout: default
                 <p class="tab-intro">Students I've collaborated with and advised on research.</p>
                 <ul class="mentoring-list">
                   {% for student in site.data.mentoring %}
-                    <li>{% if student.url %}<a href="{{ student.url }}" target="_blank">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}: {{ student.level }}, {{ student.school }} ({{ student.years }})</li>
+                    <li>{% if student.url %}<a href="{{ student.url }}" target="_blank">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}: {{ student.level }}, {{ student.school }} ({{ student.years }}){% if student.now %}; now {{ student.now }}{% endif %}</li>
                   {% endfor %}
                 </ul>
                 <p><strong>If you're a University of Michigan student interested in my research and would like to work with me, please <a href="mailto:{{ site.email }}">send me an email</a>.</strong></p>
