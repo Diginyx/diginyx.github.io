@@ -256,6 +256,11 @@ layout: default
                   <div class="list-group">
                     <div class="list-group-item list-group-item-action">
                       <div>
+                        {% if job.icon %}
+                        <div class="entry-img-pane job-logo-pane">
+                          <img src="{{ job.icon | relative_url }}" class="entry-img job-logo" alt="{{ job.org | default: job.title }} logo">
+                        </div>
+                        {% endif %}
                         <div class="d-flex justify-content-between">
                           <h5 class="mb-1">{{ job.title }}</h5>
                           <small>{{ job.start }} - {{ job.end }}</small>
@@ -275,6 +280,11 @@ layout: default
                   <div class="list-group">
                     <div class="list-group-item list-group-item-action">
                       <div>
+                        {% if job.icon %}
+                        <div class="entry-img-pane job-logo-pane">
+                          <img src="{{ job.icon | relative_url }}" class="entry-img job-logo" alt="{{ job.org | default: job.title }} logo">
+                        </div>
+                        {% endif %}
                         <div class="d-flex justify-content-between">
                           <h5 class="mb-1">{{ job.title }}</h5>
                           <small>{{ job.start }} - {{ job.end }}</small>
@@ -390,6 +400,8 @@ layout: default
   .tab-content h2.bibliography { font-size: 2rem; font-weight: 500; margin-top: 1.25rem; margin-bottom: 0.5rem; }
   .tab-content .entry-img-pane { width: 80px; float: left; }
   .tab-content .entry-img { margin-top: 3px; height: 45px; }
+  .tab-content .job-logo-pane { width: 96px; height: 50px; display: flex; align-items: center; margin-right: .75rem; }
+  .tab-content .job-logo { height: auto; max-height: 46px; max-width: 90px; margin-top: 0; object-fit: contain; }
 </style>
 
 <!-- OPTIONAL TOAST JS FUNCTION-->
