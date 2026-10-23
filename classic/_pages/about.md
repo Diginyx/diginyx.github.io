@@ -158,6 +158,8 @@ Advised by Dr. Mina Guirguis · NSF REU
 
 
 # 👔 Service & Leadership
+- *Oct 2026*, Organizing Committee, **[Learning from Situated and Embodied Interaction Workshop](https://learning-situated-interaction.github.io/)** at COLM 2026, San Francisco
+- *2026*, Reviewer, **ACM/IEEE International Conference on Human-Robot Interaction (HRI 2027)**
 - *Fall 2024 – Spring 2025*, Treasurer, **Computer Science and Engineering Graduate Students**, University of Michigan
 - *Fall 2024 – Spring 2025*, President, **Artificial Intelligence Club**
 - *Fall 2019 – Spring 2022*, President, **Competitive Cybersecurity and Cyber-Physical Club**, Boise State University

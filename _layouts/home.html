@@ -64,6 +64,8 @@ layout: default
   .tab-content .mentoring-heading { font-weight: 700; color: #5C1A1B; margin: .25rem 0 .4rem; }
   .tab-content .mentee-detail { color: #555; font-size: .95em; margin-left: .25rem; }
   .tab-content #mentoring a:hover { color: #5C1A1B; text-decoration: underline; }
+  .tab-content #service a { color: #9B3536; }
+  .tab-content #service a:hover { color: #5C1A1B; text-decoration: underline; }
   .tab-content .job-role { font-size: 1.1rem; font-weight: 700; color: #5C1A1B; margin: .2rem 0 .6rem; }
 </style>
 
@@ -329,6 +331,17 @@ layout: default
                   {% for award in site.data.awards %}
                     <li>
                       <strong>{{ award.name }}</strong>{% if award.amount %} ({{ award.amount }}){% endif %} <em>— {{ award.date }}</em>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% elsif section.name == "Service" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <span><i>Service to the research community.</i></span>
+                <ul class="awards-list">
+                  {% for item in site.data.service %}
+                    <li>
+                      <strong>{{ item.role }}</strong>, {% if item.url %}<a href="{{ item.url }}" target="_blank">{{ item.event }}</a>{% else %}{{ item.event }}{% endif %}{% if item.venue %} at {{ item.venue }}{% endif %}{% if item.location %}, {{ item.location }}{% endif %} <em>— {{ item.date }}</em>
                     </li>
                   {% endfor %}
                 </ul>

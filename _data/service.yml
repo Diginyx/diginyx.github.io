@@ -1,0 +1,11 @@
+# Newest first. Optional fields: `url:` links the event name, `venue:` and `location:` follow it.
+- role: Organizing Committee
+  event: Learning from Situated and Embodied Interaction Workshop
+  url: https://learning-situated-interaction.github.io/
+  venue: COLM 2026
+  location: San Francisco, CA
+  date: October 2026
+
+- role: Reviewer
+  event: ACM/IEEE International Conference on Human-Robot Interaction (HRI 2027)
+  date: "2026"
