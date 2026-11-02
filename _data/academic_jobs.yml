@@ -41,12 +41,12 @@
   description: |
     Supervised by Dr. Casey Kennington.
 
-    **Symbol and Communicative Grounding through Object Permanence on a Mobile Robot** (SIGdial 2022)
+    **Symbol and Communicative Grounding through Object Permanence with a Mobile Robot** (SIGdial 2022)
 
     - Studied how object permanence helps a robot learn language, building an incremental spoken dialogue system that transcribes and understands speech, detects and grounds objects, and maps them with SLAM on the Anki Cozmo robot
     - Extended Cozmo's SLAM map to remember each object it has seen and its location; in an A/B study with 24 participants, this raised the robot's accuracy answering what/where questions about learned objects from 70.0% to 82.7% and nearly doubled the questions participants asked
 
-    **HADREB: A Dataset of Human Appraisals of Robot Emotional Behaviors** (LREC 2022)
+    **HADREB: Human Appraisals and (English) Descriptions of Robot Emotional Behaviors** (LREC 2022)
 
     - Collected and analyzed HADREB, a dataset of over 1,000 robot emotional behaviors described and rated by 32 participants on the Misty II and Cozmo robots
     - Showed a zero-shot language model predicts perceived emotion from the descriptions with up to 79.3% accuracy
